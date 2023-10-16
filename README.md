@@ -180,7 +180,7 @@ Programação e Desenvolvimento de Software II
 
 Será avaliada a partipação individual de cada membro do grupo, como um valor entre 0 e 1 ,
 baseado na proporção de commits no GitHub e interação durante as aulas de acompanhemento
-do projeto, por email, mensagens, etc. Sendo $$P$$ a nota de participação e $$N_i$$ a nota de cada
+do projeto, por email, mensagens, etc. Sendo *P* a nota de participação e *Ni* a nota de cada
 item descrito acima, a nota final será dada por
 
 $$NotaFinal=P\sum_{1}^{}N_i$$
