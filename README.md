@@ -2,7 +2,15 @@
 
 Programação e Desenvolvimento de Software II - 2023/2 - UFMG
 
-# 1 Introdução
+# Sumário
+
+1. [Introdução](#1-introdução)
+2. [Modelagem](#2-modelagem)
+3. [Documentação](#3-documentação)
+4. [Comentários Gerais](#4-comentários-gerais)
+5. [Critérios de Avaliação](#5-critérios-de-avaliação)
+
+# 1. Introdução
 
 O grupo deve escolher um problema de seu interesse e realizar todo o processo de desenvolvi-
 mento (análise, projeto e implementação) de uma solução. Espera-se, ao final, um sistema de
@@ -48,7 +56,7 @@ plementação de aplicações gráficas entra como ponto extra, mas não se sint
 fazer, tendo em vista que não faz parte da ementa da disciplina.) Possíveis arquivos necessários
 durante a etapa de inicialização do sistema deverão ser fornecidos pelo grupo.
 
-# 2 Modelagem
+# 2. Modelagem
 
 As histórias de usuário são uma forma simples de apresentar os requisitos funcionais desejados
 para um determinado sistema. São artefatos de desenvolvimento utilizados principalmente em
@@ -78,7 +86,7 @@ as mais importantes. Cada cartão deve apresentar pelo menos quatro responsabili
 (considerando conhecimento e realização) e mencionar pelo menos duas colaborações. Você
 pode usar esse site para lhe auxiliar a fazer o cartão:https://echeung.me/crcmaker/
 
-# 3 Documentação
+# 3. Documentação
 
 Durante toda a implementação, quaisquer declarações de classes e funções (apenas nos arquivos
 de cabeçalho!) devem ser documentadas utilizando-se a ferramenta Doxygen (http://www.do
@@ -96,18 +104,18 @@ em si. O arquivo README.md deve conter (pelo menos!):
     tema operacional específico; se possível, para facilitar a correção, peço que garantam o
     funcionamento no ambiente linux/wsl)
 
-# 4 Comentários Gerais
+# 4. Comentários Gerais
 
 - O trabalho deverá ser feito em grupos com quatro ou cinco alunos
 - Trabalhos copiados serão, obviamente, zerados!!!
 - Na entrega final, será considerado o último commit na branch principal do projeto
 - O arquivo deve conter um arquivo Makefile com as opções make e make run.
 
-# 5 Critérios de Avaliação
+# 5. Critérios de Avaliação
 
-## 5.1 Entrega Parcial (Modelagem)
+## 5.1. Entrega Parcial (Modelagem)
 
-**5.1.1 Histórias de Usuário (3 pontos):**
+**5.1.1. Histórias de Usuário (3 pontos):**
 
 - − 0. 6 pontos por cada história não entregue (considerando o mínimo de cinco)
 
