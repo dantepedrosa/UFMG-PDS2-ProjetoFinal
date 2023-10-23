@@ -21,7 +21,7 @@ C++17. Uma lista não exaustiva de _sugestões_ de temas é apresentada abaixo. 
 
 - Twitter (tweet, retweet, follow, etc)
 - Gerenciador de tarefas/compromissos (adicionar, remover, listar, histórico, etc)
-- Sistema para biblioteca (busca, reserva, empréstimo, etc)
+- **Sistema para biblioteca (busca, reserva, empréstimo, etc)**
 - Sistema de gerência de e-commerce
 - Mini rede social (timeline, adicionar/listar amigos, post, etc)
 - UFMG: Carona, Eventos, Bandejão, Gamefication, Oportunidades, ...
