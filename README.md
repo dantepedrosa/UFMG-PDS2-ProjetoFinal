@@ -15,18 +15,20 @@ A descrição do projeto solicitado se encontra aqui: [`projeto-final-descritivo
 ├── doc
 ├── include
 │   └── *.h
+├── lib
+    └── doctest.hpp
 ├── obj
 │   └── *.o
 ├── src
 │   └── *.cpp
 └── test
-    └── doctest.hpp
 ```
 [comment]: <> (Gerado em https://www.text-tree-generator.com/)
 
 - [bin](bin) - Pasta com os arquivos executáveis gerados na compilação
 - [doc](doc) - Pasta com os arquivos Doxygen de documentação
 - [include](include) - Pasta com os headers `*.hpp`
+- [lib](lib) - Pasta com as bibliotecas utilizadas no programa
 - [obj](obj) - Pasta com os arquivos objeto `*.o` gerados na compilação
 - [src](src) - Pasta com os códigos fonte `*.cpp`
-- [test](test) - Pasta com os arquivos de teste, baseados no [`doctest`](test/doctest.hpp)
+- [test](test) - Pasta com os arquivos de teste
