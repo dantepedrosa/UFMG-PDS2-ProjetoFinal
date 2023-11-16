@@ -84,13 +84,13 @@ GitHub, passando o mouse sobre o item da lista.
 Em seguida, faça pelo menos CINCO cartões CRC para as classes que você julga como sendo
 as mais importantes. Cada cartão deve apresentar pelo menos quatro responsabilidades _coesas_
 (considerando conhecimento e realização) e mencionar pelo menos duas colaborações. Você
-pode usar esse site para lhe auxiliar a fazer o cartão:https://echeung.me/crcmaker/
+pode usar esse site para lhe auxiliar a fazer o cartão: https://echeung.me/crcmaker/
 
 # 3. Documentação
 
 Durante toda a implementação, quaisquer declarações de classes e funções (apenas nos arquivos
-de cabeçalho!) devem ser documentadas utilizando-se a ferramenta Doxygen (http://www.do
-xygen.org/) e o arquivo README (https://docs.github.com/pt/repositories/managing
+de cabeçalho!) devem ser documentadas utilizando-se a ferramenta Doxygen (http://www.doxygen.org/)
+e o arquivo README (https://docs.github.com/pt/repositories/managing
 -your-repositorys-settings-and-features/customizing-your-repository/about-rea
 dmes). A sintaxe dos comentários pode ser encontrada nas notas de aula (os comentários com
 três barras, seguido de notações especiais como @brief, @param, e @return).
