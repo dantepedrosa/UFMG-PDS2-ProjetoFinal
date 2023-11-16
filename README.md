@@ -16,7 +16,7 @@ A descrição do projeto solicitado se encontra aqui: [`projeto-final-descritivo
 ├── include
 │   └── *.h
 ├── lib
-    └── doctest.hpp
+│   └── doctest.hpp
 ├── obj
 │   └── *.o
 ├── src
