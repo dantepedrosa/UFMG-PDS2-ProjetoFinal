@@ -1,3 +1,4 @@
+#include <string>
 //TODO - Incluir colaborações
 
 class Livro {
@@ -7,6 +8,11 @@ public:
 
 private:
 
-    // TODO - Incluir atributos de usuário
+    std::string _nomeLivro;
+    std::string _genero;
+    std::string _autor;
+    unsigned _anoPublicacao;
+    bool _isDisponivel;
+
 
 };
