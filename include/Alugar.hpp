@@ -1,4 +1,7 @@
 //TODO - Incluir colaborações
+#pragma once
+#include <string>
+#include <iostream>
 
 class Alugar {
 public:
