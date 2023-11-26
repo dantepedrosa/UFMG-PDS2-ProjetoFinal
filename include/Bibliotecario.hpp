@@ -1,6 +1,8 @@
 //TODO - Incluir colaborações
 #pragma once
 #include <string>
+#include "BancoDeDados.hpp"
+
 class Bibliotecario {
 public:
 // TODO - Incluir métodos de usuário
@@ -10,5 +12,5 @@ public:
     void mostrarUsuariosComLivrosAtrasados(BancoDeDados& banco) const;
 private:
 // TODO - Incluir atributos de usuário
-
+    BancoDeDados &banco;
 };
