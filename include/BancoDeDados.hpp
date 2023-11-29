@@ -8,12 +8,17 @@
 
 class BancoDeDados {
 public:
-    // TODO - Incluir métodos de usuário
-    void adicionarLivros(Livro &livro);
-    void mostrarTodosLivros();
+    // TODO - Incluir métodos de BancoDeDados
+
+    void adicionaLivro();
+    void removeLivro(unsigned long isbn);
     std::vector<Livro> obterLivrosPorEstado(std::string _estado);
 
 private:
-    // TODO - Incluir atributos de usuário
-std::map<std::string, Livro> _livros;
+
+    // TODO - arquivo com armazenamento geral de livros em acervo
+    // TODO - arquivo com armazenamento de livros por ISBN
+    // TODO - arquivo para armazenar cada categorização
+    std::map<std::string, Livro> _livros;
+
 };

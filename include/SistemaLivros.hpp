@@ -26,6 +26,13 @@ public:
     /// @return True se bem sucedido e False caso haja falha
     bool adcionarLivro(Livro livro);
 
+    /// @brief Cria uma cópia do livro ter que incluir tudo
+    /// @details Esta função incrementa o número de cópias à 
+    /// lista _biblioteca e salva as informações no banco de dados.
+    /// @param isbn Código de livro
+    /// @return True se bem sucedido e False caso haja falha
+    bool adcionarLivro(unsigned long isbn);
+
     /// @brief Remove livro das listas e do banco de dados
     /// @details Esta função remove o livro das listas da classe
     /// (_biblioteca, _byAno, etc) e salva as informações no banco de dados 
