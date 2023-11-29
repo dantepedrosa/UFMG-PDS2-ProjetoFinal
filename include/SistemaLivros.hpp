@@ -8,6 +8,15 @@
 #include "Livro.hpp"
 #include "BancoDeDados.hpp"
 
+/// @brief Estrutuda de dado utilizada para salvar livros no banco de dados.
+struct LivroDB{
+    std::string nome;
+    std::string autor;
+    std::string assunto;
+    unsigned anoPublicacao;
+    unsigned copias;
+};
+
 class SistemaLivros {
 public:
 
@@ -30,14 +39,17 @@ public:
     /// chamando as respectivas funções de BancoDeDados para cada.
     /// @return True se bem sucedido e False caso haja falha
     bool salvarListas();
+
+    // TODO - emprestarLivro(isbn)
+    // TODO - devolverLivro(isbn)
     
 private:
 
     /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
     BancoDeDados bd;
 
-    /// @brief Armazena os livros da biblioteca (por ISBN) e o seu número de cópias.
-    std::map<unsigned long, unsigned> _biblioteca;
+    /// @brief Armazena os livros da biblioteca (por ISBN) e o suas características.
+    std::map<unsigned long, LivroDB> _biblioteca;
     
     /// @brief Armazena os ISBN dos livros por ano.
     /// @details O formato está a seguir:
