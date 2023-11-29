@@ -10,7 +10,6 @@
 
 class SistemaLivros {
 public:
-    // TODO - Incluir métodos de SistemaLivros
 
     /// @brief Inclui livro nas listas e adciona ao banco de dados.
     /// @details Esta função adciona às listas da própria classe 
@@ -27,6 +26,7 @@ public:
     bool removerLivro(Livro livro);
     
 private:
+
     /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
     BancoDeDados bd;
 
