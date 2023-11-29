@@ -9,19 +9,45 @@ A descrição do projeto solicitado se encontra aqui: [`projeto-final-descritivo
 ## Estrutura de arquivos do projeto
 
 ```
-/
+.
+├── Fluxograma da Biblioteca.pdf
+├── Makefile
+├── README.md
 ├── bin
-│   └── *.exe
+│   └── temp.txt
+├── cartoes_CRC.pdf
 ├── doc
+│   └── temp.txt
 ├── include
-│   └── *.h
+│   ├── Administracao.hpp
+│   ├── Alugar.hpp
+│   ├── BancoDeDados.hpp
+│   ├── Bibliotecario.hpp
+│   ├── Livro.hpp
+│   ├── Locacao.hpp
+│   ├── SistemaLivros.hpp
+│   └── Usuario.hpp
 ├── lib
 │   └── doctest.hpp
 ├── obj
-│   └── *.o
+│   └── temp.txt
+├── projeto-final-descritivo.md
 ├── src
-│   └── *.cpp
+│   ├── Administracao.cpp
+│   ├── Alugar.cpp
+│   ├── BancoDeDados.cpp
+│   ├── Bibliotecario.cpp
+│   ├── Livro.cpp
+│   ├── Locacao.cpp
+│   └── Usuario.cpp
 └── test
+    ├── test.BancoDeDados.cpp
+    ├── testAdministracao.cpp
+    ├── testAlugar.cpp
+    ├── testBibliotecario.cpp
+    ├── testLivro.cpp
+    ├── testLocacao.cpp
+    └── testUsuario.cpp
 ```
 [comment]: <> (Gerado em https://www.text-tree-generator.com/)
 
