@@ -19,7 +19,7 @@ public:
   );
 
   /// @brief Retorna o ISBN do livro
-  /// @return Código ISBN
+  /// @return Código ISBN do livro
   unsigned long getISBN();
 
   /// @brief Retorna o nome do livro
@@ -51,9 +51,14 @@ private:
   bool _setAnoPublicacao(unsigned ano);  // Configura o ano de publicação do livro
 
 
+  /// @brief Código ISBN do livro
   unsigned long _isbn;
+  /// @brief Nome do livro
   string _nomeLivro;
+  /// @brief Assunto do livro
   string _assunto;
+  /// @brief Nome do autor do livro
   string _autor;
+  /// @brief Ano de publicação do livro
   unsigned _anoPublicacao;
 };
