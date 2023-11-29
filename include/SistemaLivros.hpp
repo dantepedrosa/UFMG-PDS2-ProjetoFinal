@@ -24,6 +24,12 @@ public:
     /// @param livro Instância de Livro
     /// @return True se bem sucedido e False caso haja falha
     bool removerLivro(Livro livro);
+
+    /// @brief Salva todas as listas do sistema de biblioteca no banco de dados.
+    /// @details Salva as listas _biblioteca, _byAno, _byAssunto e _byAutor 
+    /// chamando as respectivas funções de BancoDeDados para cada.
+    /// @return True se bem sucedido e False caso haja falha
+    bool salvarListas();
     
 private:
 
