@@ -1,4 +1,3 @@
-//TODO - Incluir colaborações
 #pragma once
 
 #include <iostream>
