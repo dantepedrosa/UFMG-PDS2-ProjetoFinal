@@ -2,8 +2,9 @@
 #pragma once
 #include <string>
 #include "BancoDeDados.hpp"
+#include "Usuario.hpp"
 
-class Bibliotecario {
+class Bibliotecario : Usuario{
 public:
 // TODO - Incluir métodos de usuário
 
@@ -18,6 +19,6 @@ public:
     void mostrarUsuariosComLivrosAtrasados(BancoDeDados& banco) const;
 
 private:
-// TODO - Incluir atributos de usuário
+    // TODO - Incluir atributos de usuário
     BancoDeDados &banco;
 };

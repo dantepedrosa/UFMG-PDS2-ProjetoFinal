@@ -2,10 +2,11 @@
 
 #include <iostream>
 
+#include "Usuario.hpp"
 #include "Livro.hpp"
 #include "SistemaLivros.hpp"
 
-class Administracao {
+class Administracao : Usuario{
 public:
 
     /// @brief Adciona livro no banco de dados e do sistema de livros
