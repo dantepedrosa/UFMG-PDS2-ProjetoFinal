@@ -42,7 +42,9 @@ public:
 
 private:
 
-  /// @brief Configura o ISBN do livro, seguindo modelo de 13 dígitos "XXX-XX-XXX-XXXX-X"
+  /// @brief Configura o ISBN do livro, seguindo modelo de 13 dígitos "XXXXXXXXXXXX-X"
+  /// @details O código deve ser conferido a partir da fórmula a seguir, onde o último character deve bater com o calculado.
+  /// \f[ x_{13}=10-((x_1+x_2+x_3+...+x_{11}+x_{12}) \text{ mod }10 ) \f]
   /// @param isbn Código ISBN do livro
   /// @return True se bem sucedido, False se falhou
   bool _setISBN(CodISBN isbn);
@@ -53,14 +55,10 @@ private:
   bool _setAnoPublicacao(unsigned ano);
 
 
-  /// @brief Código ISBN do livro
-  CodISBN _isbn;
-  /// @brief Nome do livro
-  std::string _nomeLivro;
-  /// @brief Assunto do livro
-  std::string _assunto;
-  /// @brief Nome do autor do livro
-  std::string _autor;
-  /// @brief Ano de publicação do livro
-  unsigned _anoPublicacao;
+  CodISBN _isbn;            ///< Código ISBN do livro
+  std::string _nomeLivro;   ///< Nome do livro
+  std::string _assunto;     ///< Assunto do livro
+  std::string _autor;       ///< Nome do autor do livro
+  unsigned _anoPublicacao;  ///< Ano de publicação do livro
+
 };
