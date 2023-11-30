@@ -31,7 +31,15 @@ public:
     /// lista _biblioteca e salva as informações no banco de dados.
     /// @param isbn Código de livro
     /// @return True se bem sucedido e False caso haja falha
-    bool adcionarLivro(unsigned long isbn);
+    bool adcionarLivro(CodISBN isbn);
+
+    /// @brief Edita as informações de um livro já existente no sistema
+    /// @details Esta função edita as informações de um livro já existente em 
+    /// lista _biblioteca e salva as informações no banco de dados.
+    /// @param isbn Código ISBN do livro
+    /// @param livro Parâmetros do livro
+    /// @return True se bem sucedido e False caso haja falha
+    bool editarLivro(CodISBN isbn, LivroDB livro);
 
     /// @brief Remove livro das listas e do banco de dados
     /// @details Esta função remove o livro das listas da classe
@@ -46,8 +54,15 @@ public:
     /// @return True se bem sucedido e False caso haja falha
     bool salvarListas();
 
-    // TODO - emprestarLivro(isbn)
-    // TODO - devolverLivro(isbn)
+    /// @brief Retira um livro do sistema de biblioteca
+    /// @param isbn Código ISBN do livro
+    /// @return True se bem sucedido e False caso haja falha 
+    bool emprestarLivro(CodISBN isbn);
+
+    /// @brief Retorna um livro ao sistema de biblioteca
+    /// @param isbn Código ISBN do livro
+    /// @return True se bem sucedido e False caso haja falha 
+    bool devolverLivro(CodISBN isbn);
     
 private:
 
@@ -55,26 +70,29 @@ private:
     BancoDeDados bd;
 
     /// @brief Armazena os livros da biblioteca (por ISBN) e o suas características.
-    std::map<unsigned long, LivroDB> _biblioteca;
+    std::map<CodISBN, LivroDB> _biblioteca;
+
+    /// @brief Livros emprestados por código ISBN e nome de usuário
+    std::vector<std::pair<CodISBN, std::string>> _livrosEmprestados;
     
     /// @brief Armazena os ISBN dos livros por ano.
     /// @details O formato está a seguir:
     /// {
     ///     2020:       [9781234567897, 9781234567847],
     /// }
-    std::map<unsigned, std::set<unsigned long>> _byAno;
+    std::map<unsigned, std::set<CodISBN>> _byAno;
 
     /// @brief Armazena os ISBN dos livros por assunto.
     /// @details O formato está a seguir:
     /// {
     ///     "Letras":   [9781234567897, 9781234567847],
     /// }
-    std::map<std::string, std::set<unsigned long>> _byAssunto;
+    std::map<std::string, std::set<CodISBN>> _byAssunto;
     
     /// @brief Armazena os ISBN dos livros por assunto.
     /// @details O formato está a seguir:
     /// {
     ///     "John Doe": [9781234567897, 9781234567847],
     /// }
-    std::map<std::string, std::set<unsigned long>> _byAutor;
+    std::map<std::string, std::set<CodISBN>> _byAutor;
 };
