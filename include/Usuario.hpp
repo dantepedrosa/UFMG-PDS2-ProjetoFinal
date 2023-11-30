@@ -1,9 +1,7 @@
-//TODO - Incluir colaborações
 #pragma once
 
 #include <string>
 #include <set>
-using namespace std;
 
 class Usuario {
 public:
@@ -12,10 +10,10 @@ public:
     /// @param nome nome de usuário (aceito apenas nomes sem espaço)
     /// @param senha senha do usuário (apenas números)
     /// @param tipoUsuario Tipo do usuário: Usuário comum, adm e bibliotecário 
-    Usuario(string nome, int senha, string tipoUsuario);
+    Usuario(std::string nome, int senha, std::string tipoUsuario);
     
 private:
     
-    string _nome;
+    std::string _nome;
     int _senha;
 };

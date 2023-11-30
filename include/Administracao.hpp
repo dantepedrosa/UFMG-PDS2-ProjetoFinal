@@ -25,6 +25,4 @@ public:
 
 private:
 
-    // TODO - Incluir atributos de Administração
-
 };
