@@ -20,13 +20,13 @@ OBJ = $(patsubst $(SRC_FOLDER)%.cpp, $(OBJ_FOLDER)%.o, $(SRC))
 LOGDATE = $(shell date +"%b/%d at %kh:%Mm")
 EXE = $(BIN_FOLFER)main
 
-$(OBJ_FOLDER)%.o: $(SRC_FOLDER)%.cpp
-	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
+# $(OBJ_FOLDER)%.o: $(SRC_FOLDER)%.cpp
+# 	$(CC) $(CXXFLAGS) -c $< -o $@ -I$(INCLUDE_FOLDER)
 
-all: comp run
+# all: comp run
 
-comp: $(OBJ) 
-	$(CC) $(CXXFLAGS) -o $(BIN_FOLFER)$(TARGET) $(OBJ)
+# comp: $(OBJ) 
+# 	$(CC) $(CXXFLAGS) -o $(BIN_FOLFER)$(TARGET) $(OBJ)
 
 gen_doxygen:
 	doxygen $(CONFIG_FOLDER)Doxygen
