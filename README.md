@@ -4,8 +4,9 @@ Projeto para sistema para biblioteca (busca, reserva, empréstimo, etc) simples 
 
 ## Descrição do projeto
 
-A descrição do projeto solicitado se encontra aqui: [`projeto-final-descritivo`](projeto-final-descritivo)
-Uma documentação sobre as classes, métodos e atributos utilizados se encontra em na [página de documentação](https://dantepedrosa.github.io/UFMG-PDS2-ProjetoFinal/)
+A descrição do projeto solicitado se encontra aqui: [`projeto-final-descritivo`](projeto-final-descritivo).
+
+Uma documentação sobre as classes, métodos e atributos utilizados se encontra em na [página de documentação](https://dantepedrosa.github.io/UFMG-PDS2-ProjetoFinal/).
 
 ## Estrutura de arquivos do projeto
 
