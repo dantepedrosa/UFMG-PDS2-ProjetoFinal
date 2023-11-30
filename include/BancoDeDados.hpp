@@ -1,9 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <map>
-#include <vector>
-
 #include "SistemaLivros.hpp"
 
 #define FILE_ACERVO         "acervo.bibdb"
@@ -11,6 +7,8 @@
 #define FILE_AUTOR          "by_autor.bibdb"
 #define FILE_ASSUNTO        "by_assunto.bibdb"
 #define FILE_ANO            "by_ano.bibdb"
+
+// TODO - Criar namespace bib_sis
 
 class BancoDeDados {
 public:

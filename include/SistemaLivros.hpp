@@ -3,6 +3,7 @@
 #include <iostream>
 #include <map>
 #include <set>
+#include <vector>
 
 #include "Livro.hpp"
 #include "BancoDeDados.hpp"

@@ -1,5 +1,5 @@
 #include <string>
-using namespace std;
+
 
 typedef unsigned long CodISBN;
 
@@ -14,9 +14,9 @@ public:
   /// @param ano Ano de publicação
   Livro(
     unsigned long isbn, 
-    string nomeLivro, 
-    string assunto, 
-    string autor, 
+    std::string nomeLivro, 
+    std::string assunto, 
+    std::string autor, 
     unsigned ano
   );
 
@@ -26,15 +26,15 @@ public:
 
   /// @brief Retorna o nome do livro
   /// @return Nome do livro
-  string getNome();
+  std::string getNome();
 
   /// @brief Retorna o assunto do livro
   /// @return Assunto do livro
-  string getAssunto();
+  std::string getAssunto();
 
   /// @brief Retorna o nome do autor do livro
   /// @return Nome do autor do livro
-  string getAutor();
+  std::string getAutor();
 
   /// @brief Retorna o ano de publicação do livro
   /// @return Ano de publicação do livro
@@ -45,22 +45,22 @@ private:
   /// @brief Configura o ISBN do livro, seguindo modelo de 13 dígitos "XXX-XX-XXX-XXXX-X"
   /// @param isbn Código ISBN do livro
   /// @return True se bem sucedido, False se falhou
-  bool _setISBN(unsigned long isbn);
+  bool _setISBN(CodISBN isbn);
 
   /// @brief Configura o ano de publicação do livro
   /// @param ano Ano de publicação do livro
   /// @return True se bem sucedido, False se falhou
-  bool _setAnoPublicacao(unsigned ano);  // Configura o ano de publicação do livro
+  bool _setAnoPublicacao(unsigned ano);
 
 
   /// @brief Código ISBN do livro
-  unsigned long _isbn;
+  CodISBN _isbn;
   /// @brief Nome do livro
-  string _nomeLivro;
+  std::string _nomeLivro;
   /// @brief Assunto do livro
-  string _assunto;
+  std::string _assunto;
   /// @brief Nome do autor do livro
-  string _autor;
+  std::string _autor;
   /// @brief Ano de publicação do livro
   unsigned _anoPublicacao;
 };

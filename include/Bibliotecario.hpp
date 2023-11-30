@@ -1,8 +1,7 @@
-//TODO - Incluir colaborações
 #pragma once
-#include <string>
-#include "BancoDeDados.hpp"
+
 #include "Usuario.hpp"
+#include "Livro.hpp"
 
 class Bibliotecario : Usuario{
 public:
