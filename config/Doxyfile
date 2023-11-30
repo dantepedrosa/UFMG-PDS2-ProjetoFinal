@@ -951,9 +951,7 @@ WARN_LOGFILE           =
 
 INPUT                  = /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/src/ 	\
 			 /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/include/ 	\ 
-		 	 /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/lib/	\
-			 /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/test/	\
-			 /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/
+			 /home/dante/prj_final/UFMG-PDS2-ProjetoFinal/test/
 
 # This tag can be used to specify the character encoding of the source files
 # that doxygen parses. Internally doxygen uses the UTF-8 encoding. Doxygen uses
@@ -2503,7 +2501,7 @@ HIDE_UNDOC_RELATIONS   = YES
 # set to NO
 # The default value is: NO.
 
-HAVE_DOT               = NO
+HAVE_DOT               = YES
 
 # The DOT_NUM_THREADS specifies the number of dot invocations doxygen is allowed
 # to run in parallel. When set to 0 doxygen will base this on the number of
