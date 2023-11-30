@@ -6,19 +6,25 @@
 
 class Bibliotecario : Usuario{
 public:
-// TODO - Incluir métodos de usuário
 
-    // TODO - Emprestar livro (usuário, livro)
-    // TODO - Devolução livro (usuário, livro)
-    // TODO - livro atrasado (gerar GRU e bloquear usuário de emprestimo)
-    // TODO - getLivrosEmprestados()
-    // TODO - getLivrosAtrasados()
-    // void receberAlertaLivroAtrasado(BancoDeDados &banco, Locacao &locacao);
-    void alterarEstadoLivro(BancoDeDados &banco, std::string &_nomeLivro, std::string &novoEstado);
-    void mostrarLivrosAtrasados(BancoDeDados& banco) const;
-    void mostrarUsuariosComLivrosAtrasados(BancoDeDados& banco) const;
+    /// @brief Consolida empréstimo no sistema de livros
+    /// @param u Instância de usuário solicitando serviço 
+    /// @param isbn Código ISBN do livro
+    /// @return True se bem sucedido e false se falhou
+    bool liberarEmprestimo(Usuario &u, CodISBN isbn);
+
+    /// @brief Consolida devolução no sistema de livros. 
+    /// Caso esteja atrasado, bloqueia o usuário e gera GRU.
+    /// @param u Instância de usuário solicitando serviço 
+    /// @param isbn Código ISBN do livro
+    /// @return True se bem sucedido e false se falhou
+    bool liberarDevolucao(Usuario &u, CodISBN isbn);
 
 private:
-    // TODO - Incluir atributos de usuário
-    BancoDeDados &banco;
+    
+    /// @brief Gera uma GRU respectiva ao período de atraso (1 real por dia)
+    /// @param dias Número de dias de atraso.
+    /// @return Código de GRU formato "12345690909" + "00003" (número de dias atrasados)
+    std::string gerarGRU(unsigned dias);
+
 };
