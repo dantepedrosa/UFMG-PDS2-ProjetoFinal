@@ -1,24 +1,35 @@
-//TODO - Incluir colaborações
 #pragma once
+
 #include <iostream>
 #include <map>
 #include <vector>
-#include "Livro.hpp"
 
+#include "SistemaLivros.hpp"
+
+#define FILE_ACERVO         "acervo.bibdb"
+#define FILE_EMPRESTIMOS    "emprestimos.bibdb"
+#define FILE_AUTOR          "by_autor.bibdb"
+#define FILE_ASSUNTO        "by_assunto.bibdb"
+#define FILE_ANO            "by_ano.bibdb"
 
 class BancoDeDados {
 public:
-    // TODO - Incluir métodos de BancoDeDados
 
-    void adicionaLivro();
-    void removeLivro(unsigned long isbn);
-    std::vector<Livro> obterLivrosPorEstado(std::string _estado);
+    /// @brief Construtor da classe.
+    /// @param readFirst Caso true, o sistema irá ler o arquivo existente e configurar. 
+    /// Caso false, cria arquivos do zero.
+    /// @param path Caminho para pasta que serão salvos os arquivos.
+    BancoDeDados(bool readFirst, std::string path);
+
+    bool lerAcervo(SistemaLivros &sl);
+    bool lerCategorias(SistemaLivros &sl);
+
+    bool salvarAcervo(SistemaLivros &sl);
+    bool salvarCategorias(SistemaLivros &sl);
+
 
 private:
 
-    // TODO - arquivo com armazenamento geral de livros em acervo
-    // TODO - arquivo com armazenamento de livros por ISBN
-    // TODO - arquivo para armazenar cada categorização
-    std::map<std::string, Livro> _livros;
+    std::string _folderPath;
 
 };
