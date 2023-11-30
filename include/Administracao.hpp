@@ -22,6 +22,7 @@ public:
     /// @return True se foi removido com sucesso e False caso haja falha
     bool removerLivro(Livro livro);
 
+
 private:
 
     // TODO - Incluir atributos de Administração

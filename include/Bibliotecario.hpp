@@ -8,13 +8,14 @@ class Bibliotecario : Usuario{
 public:
 
     /// @brief Consolida empréstimo no sistema de livros
+    /// @details Caso possua algum livro atrasado ou pendência, bloqueia o usuário.
     /// @param u Instância de usuário solicitando serviço 
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e false se falhou
     bool liberarEmprestimo(Usuario &u, CodISBN isbn);
 
     /// @brief Consolida devolução no sistema de livros. 
-    /// Caso esteja atrasado, bloqueia o usuário e gera GRU.
+    /// @details Caso esteja atrasado, bloqueia o usuário e gera GRU.
     /// @param u Instância de usuário solicitando serviço 
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e false se falhou

@@ -1,6 +1,8 @@
 #include <string>
 using namespace std;
 
+typedef unsigned long CodISBN;
+
 class Livro {
 public:
 
