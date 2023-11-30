@@ -29,7 +29,7 @@ EXE = $(BIN_FOLFER)main
 # 	$(CC) $(CXXFLAGS) -o $(BIN_FOLFER)$(TARGET) $(OBJ)
 
 gen_doxygen:
-	doxygen $(CONFIG_FOLDER)Doxygen
+	doxygen $(CONFIG_FOLDER)Doxyfile
 	
 # run:
 # 	$(EXE) -i ./input/1.tst.i -o ./output/output1.txt -m 4 -s 5
