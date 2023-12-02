@@ -27,10 +27,9 @@ UsuarioComum::UsuarioComum(std::string nome, int senha){
 
 
 bool UsuarioComum::solicitarEmprestimo(CodISBN isbn){
-    if (_comPendencia) {
-    std::cout << "Usuário com pendência. Não é possível realizar empréstimo." << std::endl;
-    return false;
-  }
+    if (_comPendencia)
+    throw std::invalid_argument("Usuário com pendência. Não é possível realizar o empréstimo.");
+        
     if (_livrosEmprestados.find(isbn) != _livrosEmprestados.end()) 
     throw std::invalid_argument("Livro já emprestado pelo usuário.");
     
