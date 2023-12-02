@@ -1,10 +1,11 @@
-//TODO - Incluir colaborações
 #pragma once
 
 #include <string>
 #include <map>
 #include <set>
+
 #include "Livro.hpp"
+#include "Usuario.hpp"
 
 struct Data{
     unsigned dia;
@@ -12,7 +13,7 @@ struct Data{
     unsigned ano;
 };
 
-class UsuarioComum {
+class UsuarioComum : Usuario {
 public:
     
     /// @brief Construtor da classe Usuário

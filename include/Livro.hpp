@@ -1,7 +1,7 @@
 #include <string>
 
 
-typedef unsigned long CodISBN;
+typedef std::string CodISBN;
 
 class Livro {
 public:
@@ -13,7 +13,7 @@ public:
   /// @param autor Autor do livro
   /// @param ano Ano de publicação
   Livro(
-    unsigned long isbn, 
+    CodISBN isbn, 
     std::string nomeLivro, 
     std::string assunto, 
     std::string autor, 
@@ -22,7 +22,7 @@ public:
 
   /// @brief Retorna o ISBN do livro
   /// @return Código ISBN do livro
-  unsigned long getISBN();
+  CodISBN getISBN();
 
   /// @brief Retorna o nome do livro
   /// @return Nome do livro
@@ -47,12 +47,17 @@ private:
   /// \f[ x_{13}=10-((x_1+x_2+x_3+...+x_{11}+x_{12}) \text{ mod }10 ) \f]
   /// @param isbn Código ISBN do livro
   /// @return True se bem sucedido, False se falhou
-  bool _setISBN(CodISBN isbn);
+  bool _setISBN(std::string isbn);
 
   /// @brief Configura o ano de publicação do livro
   /// @param ano Ano de publicação do livro
   /// @return True se bem sucedido, False se falhou
   bool _setAnoPublicacao(unsigned ano);
+
+  /// @brief Calcula o dígito verificador do ISBN e compara com o original
+  /// @param isbn Código ISBN do livro
+  /// @return True se dígitos batem
+  bool _cmpDigitoVerificador(std::string isbn);
 
 
   CodISBN _isbn;            ///< Código ISBN do livro
