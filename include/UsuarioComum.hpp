@@ -38,6 +38,14 @@ public:
     /// @return True se bem sucedido e False caso haja falha
     bool pagarGRU(std::string gru);
 
+    /// @brief Retorna se o usuario tem pendências
+    /// @return pendência do usuario
+    bool getPendencia() const;
+    
+    /// @brief Verifica se o usuário tem algum livro emprestado
+    /// @return True se o usuário tiver algum livro emprestado, false caso contrário
+    bool temLivroEmprestado() const;
+
     // FIXME - bool solicitarEmprestimo(this, isbn); // Tirar dúvida se usuário pode chamar bibliotecario enviando ele mesmo
     // FIXME - Professor vai tirar ponto por não cumprir entrega parcial
     // FIXME - Perguntar pro professor se deve ser criado mais classes que já existem
