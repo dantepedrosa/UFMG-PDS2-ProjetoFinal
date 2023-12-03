@@ -1,14 +1,25 @@
 #include "Bibliotecario.hpp"
+#include <iostream>
 #include <stdexcept>
 
 bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn){
     // TODO - Implementar função
     if(u.getPendencia()){
-        throw std::invalid_argument("Usuário com pendência, não é possível liberar o empréstimo.");
+        try {
+            throw std::invalid_argument("Usuário com pendência, não é possível liberar o empréstimo.");
+        } catch (const std::exception& e) {
+            std::cerr << "Erro: " << e.what() << std::endl;
+        }
+        return false;
     }
     
     if(u.temLivroEmprestado()){
-        throw std::invalid_argument("Usuário já tem livro emprestado, não é possível liberar o empréstimo.");
+        try {
+            throw std::invalid_argument("Usuário já tem livro emprestado, não é possível liberar o empréstimo.");
+        } catch (const std::exception& e) {
+            std::cerr << "Erro: " << e.what() << std::endl;
+        }
+        return false;
     }
     
     std::cout << "Empréstimo realizado com sucesso." << std::endl;
