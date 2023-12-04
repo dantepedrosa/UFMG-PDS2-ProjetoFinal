@@ -20,6 +20,10 @@ public:
     /// @return True se bem sucedido e false se falhou
     bool liberarDevolucao(Usuario &u, CodISBN isbn);
 
+    /// @brief Define a data de empréstimo para a instância atual
+    /// @param dataEmprestimo Data de empréstimo a ser definida
+    void setDataEmprestimo(const std::string &dataEmprestimo);
+
 private:
     
     /// @brief Gera uma GRU respectiva ao período de atraso (1 real por dia)
