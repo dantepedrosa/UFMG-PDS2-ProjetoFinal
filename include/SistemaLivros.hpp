@@ -13,9 +13,11 @@ struct LivroDB{
     std::string nome;
     std::string autor;
     std::string assunto;
-    unsigned anoPublicacao;
+    std::string anoPublicacao;
     unsigned copias;
 };
+
+/// @brief Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.
 
 class SistemaLivros {
 public:
@@ -57,44 +59,45 @@ public:
 
     /// @brief Retira um livro do sistema de biblioteca
     /// @param isbn Código ISBN do livro
-    /// @param u Usuário que receberá o livro
     /// @return True se bem sucedido e False caso haja falha 
-    bool emprestarLivro(CodISBN isbn, UsuarioComum &u);
+    bool emprestarLivro(CodISBN isbn);
 
     /// @brief Retorna um livro ao sistema de biblioteca
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e False caso haja falha 
     bool devolverLivro(CodISBN isbn);
-    
-private:
-
-    /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
-    BancoDeDados bd;
 
     /// @brief Armazena os livros da biblioteca (por ISBN) e o suas características.
-    std::map<CodISBN, LivroDB> _biblioteca;
+    std::map<CodISBN, LivroDB> biblioteca;
 
-    /// @brief Livros emprestados por código ISBN e nome de usuário
-    std::vector<std::pair<CodISBN, std::string>> _livrosEmprestados;
+    /// @brief Livros emprestados por código ISBN e nome de usuário que o possui
+    std::vector<std::pair<CodISBN, std::string>> livrosEmprestados;
     
     /// @brief Armazena os ISBN dos livros por ano.
     /// @details O formato está a seguir:
     /// {
     ///     2020:       [9781234567897, 9781234567847],
     /// }
-    std::map<unsigned, std::set<CodISBN>> _byAno;
+    std::map<std::string, std::set<CodISBN>> byAno;
 
     /// @brief Armazena os ISBN dos livros por assunto.
     /// @details O formato está a seguir:
     /// {
     ///     "Letras":   [9781234567897, 9781234567847],
     /// }
-    std::map<std::string, std::set<CodISBN>> _byAssunto;
+    std::map<std::string, std::set<CodISBN>> byAssunto;
     
     /// @brief Armazena os ISBN dos livros por assunto.
     /// @details O formato está a seguir:
     /// {
     ///     "John Doe": [9781234567897, 9781234567847],
     /// }
-    std::map<std::string, std::set<CodISBN>> _byAutor;
+    std::map<std::string, std::set<CodISBN>> byAutor;
+    
+private:
+
+    /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
+    BancoDeDados bd;
+
+
 };
