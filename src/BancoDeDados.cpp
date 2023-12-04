@@ -7,39 +7,122 @@ BancoDeDados::BancoDeDados(bool readFirst, std::string path, SistemaLivros &sl) 
     if (readFirst){
         lerBancoDeDados(sl);
     }
-    
-
-
 }
 
-bool BancoDeDados::lerBancoDeDados(SistemaLivros &sl){
+void BancoDeDados::lerBancoDeDados(SistemaLivros &sl){
     
+    // Lê o arquivo referente à cada uma das listas
     sl.biblioteca = _lerAcervo(_folderPath, FILE_ACERVO);
     sl.livrosEmprestados = _lerEmprestimos(_folderPath, FILE_EMPRESTIMOS);
     sl.byAutor = _lerCategoria(_folderPath, FILE_AUTOR);
     sl.byAssunto = _lerCategoria(_folderPath, FILE_ASSUNTO);
     sl.byAno = _lerCategoria(_folderPath, FILE_ANO);
 
+    return;
 }
 
-bool BancoDeDados::salvarAcervo(SistemaLivros &sl){
-    // TODO - Implementar função
+
+void BancoDeDados::salvarAcervo(SistemaLivros &sl){
+    
+    // Abertura e escrita  do arquivo do acervo FILE_ACERVO
+    std::string nomeArquivo = _folderPath + FILE_ACERVO;
+    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+
+    for(std::pair<CodISBN, LivroDB> pair : sl.biblioteca){
+        std::string dado = (
+            pair.first.append(",") + \
+            pair.second.nome.append(",") + \
+            pair.second.autor.append(",") + \
+            pair.second.assunto.append(",") + \
+            pair.second.anoPublicacao.append(",") + \
+            std::to_string(pair.second.copias).append("\n")
+        );
+        arquivo << dado;
+    }
+
+    // Abertura e escrita do arquivo do acervo FILE_EMPRESTIMOS
+    std::string nomeArquivo = _folderPath + FILE_EMPRESTIMOS;
+    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+
+    for(std::pair<CodISBN, std::string> pair : sl.livrosEmprestados){
+        std::string dado = (
+            pair.first.append(",") + \
+            pair.second.append("\n")
+        );
+        arquivo << dado;
+    }
+
+    arquivo.close();
+
+    return;
 }
 
-bool BancoDeDados::salvarCategorias(SistemaLivros &sl){
-    // TODO - Implementar função
+
+void BancoDeDados::salvarCategorias(SistemaLivros &sl){
+
+    // Abertura e escrita  do arquivo do acervo FILE_AUTOR
+    std::string nomeArquivo = _folderPath + FILE_AUTOR;
+    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+
+    for(auto categoria : sl.byAutor){
+        arquivo << categoria.first;
+        for(auto isbn : categoria.second){
+            arquivo << ',' << isbn;
+        }
+        arquivo << '\n';
+    }
+
+    arquivo.close();
+
+    // Abertura e escrita  do arquivo do acervo FILE_ASSUNTO
+    std::string nomeArquivo = _folderPath + FILE_ASSUNTO;
+    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+
+    for(auto categoria : sl.byAssunto){
+        arquivo << categoria.first;
+        for(auto isbn : categoria.second){
+            arquivo << ',' << isbn;
+        }
+        arquivo << '\n';
+    }
+
+    arquivo.close();
+
+    // Abertura e escrita  do arquivo do acervo FILE_ANO
+    std::string nomeArquivo = _folderPath + FILE_ANO;
+    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+
+    for(auto categoria : sl.byAno){
+        arquivo << categoria.first;
+        for(auto isbn : categoria.second){
+            arquivo << ',' << isbn;
+        }
+        arquivo << '\n';
+    }
+
+    arquivo.close();
+
+    return;
 }
+
 
 std::map<CodISBN, LivroDB> BancoDeDados::_lerAcervo(std::string path, std::string nome){
     
+    // Abertura do arquivo
     std::string nomeArquivo = path + nome;
     std::ifstream arquivo(nomeArquivo);
-    std::map<CodISBN, LivroDB> dados;
-
+    
     if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
+    std::map<CodISBN, LivroDB> dados;
     std::string linha;
     
+    // Salva cada linha do arquivo
     while (std::getline(arquivo, linha)) {
         std::stringstream linhaStream(linha);
 
@@ -75,14 +158,15 @@ std::map<CodISBN, LivroDB> BancoDeDados::_lerAcervo(std::string path, std::strin
 
 std::vector<std::pair<CodISBN, std::string>> BancoDeDados::_lerEmprestimos(std::string path, std::string nome){
 
+    // Abertura do arquivo
     std::string nomeArquivo = path + nome;
     std::ifstream arquivo(nomeArquivo);
-    std::vector<std::pair<CodISBN, std::string>> dados;
-
     if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
+    std::vector<std::pair<CodISBN, std::string>> dados;
     std::string linha;
     
+    // Salva cada linha do arquivo
     while (std::getline(arquivo, linha)) {
         std::stringstream linhaStream(linha);
 
@@ -107,14 +191,15 @@ std::vector<std::pair<CodISBN, std::string>> BancoDeDados::_lerEmprestimos(std::
 
 std::map<std::string, std::set<CodISBN>> BancoDeDados::_lerCategoria(std::string path, std::string nome){
 
+    // Abertura do arquivo
     std::string nomeArquivo = path + nome;
     std::ifstream arquivo(nomeArquivo);
-    std::map<std::string, std::set<CodISBN>> dados;
-
     if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
+    std::map<std::string, std::set<CodISBN>> dados;
     std::string linha;
     
+    // Salva cada linha do arquivo
     while (std::getline(arquivo, linha)) {
         std::stringstream linhaStream(linha);
 
@@ -148,4 +233,6 @@ void BancoDeDados::_setFolderPath(std::string path){
     if (path.back() != '\\') throw std::invalid_argument("Formato do caminho para pasta de arquivos inválido!");
 
     _folderPath = path;
+
+    return;
 }
