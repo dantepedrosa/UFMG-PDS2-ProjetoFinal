@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 
-bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn){
+bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn, const std::string &data){
     // TODO - Implementar função
     if(u.getPendencia()){
         try {
@@ -21,7 +21,7 @@ bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn){
         }
         return false;
     }
-    
+    _dataEmprestimo = data;
     std::cout << "Empréstimo realizado com sucesso." << std::endl;
     return true;
 }
