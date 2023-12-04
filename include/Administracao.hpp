@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Usuario.hpp"
+#include <iostream>
 #include "Livro.hpp"
 #include "SistemaLivros.hpp"
 
