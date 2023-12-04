@@ -28,17 +28,17 @@ public:
     /// @brief Abre o aquivo de acervo e categorias e salva nas listas em SistemaLivros
     /// @param sl Instância de Sistema Livros
     /// @return True se bem sucedido e False caso haja falha
-    bool lerBancoDeDados(SistemaLivros &sl);
+    void lerBancoDeDados(SistemaLivros &sl);
 
     /// @brief Salva a lista referente ao acerto e empréstimo em arquivo de texto
     /// @param sl Instância de Sistema Livros
     /// @return True se bem sucedido e False caso haja falha
-    bool salvarAcervo(SistemaLivros &sl);
+    void salvarAcervo(SistemaLivros &sl);
     
     /// @brief Salva as listas de categorização em arquivo de texto
     /// @param sl Instância de Sistema Livros
     /// @return True se bem sucedido e False caso haja falha
-    bool salvarCategorias(SistemaLivros &sl);
+    void salvarCategorias(SistemaLivros &sl);
 
 
 private:
@@ -65,7 +65,6 @@ private:
     /// @param String Contendo o caminho relativo ou completo para a pasta de arquivos
     void _setFolderPath(std::string path);
 
-    std::string _arquivosCategorias[3] = {FILE_AUTOR, FILE_ASSUNTO, FILE_ANO};  ///< Lista com os tipos de categorização salvos
     std::string _folderPath;    ///< Caminho relativo ou absoluto para a pasta com arquivos CSV (*.csv)
 
 };
