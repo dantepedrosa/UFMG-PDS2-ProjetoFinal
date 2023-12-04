@@ -57,8 +57,9 @@ public:
 
     /// @brief Retira um livro do sistema de biblioteca
     /// @param isbn Código ISBN do livro
+    /// @param u Usuário que receberá o livro
     /// @return True se bem sucedido e False caso haja falha 
-    bool emprestarLivro(CodISBN isbn);
+    bool emprestarLivro(CodISBN isbn, UsuarioComum &u);
 
     /// @brief Retorna um livro ao sistema de biblioteca
     /// @param isbn Código ISBN do livro
