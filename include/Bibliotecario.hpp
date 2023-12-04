@@ -26,5 +26,6 @@ private:
     /// @param dias Número de dias de atraso.
     /// @return Código de GRU formato "12345690909" + "00003" (número de dias atrasados)
     std::string gerarGRU(unsigned dias);
-
+    
+    std::string _dataEmprestimo;
 };
