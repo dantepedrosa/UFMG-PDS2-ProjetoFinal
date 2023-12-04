@@ -8,10 +8,11 @@ public:
 
     /// @brief Consolida empréstimo no sistema de livros
     /// @details Caso possua algum livro atrasado ou pendência, bloqueia o usuário.
-    /// @param u Instância de usuário solicitando serviço 
+    /// @param u Instância de usuário solicitando serviço
+    /// @param data Data da liberação do empréstimo
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e false se falhou
-    bool liberarEmprestimo(Usuario &u, CodISBN isbn);
+    bool liberarEmprestimo(Usuario &u, CodISBN isbn, const std::string &data);
 
     /// @brief Consolida devolução no sistema de livros. 
     /// @details Caso esteja atrasado, bloqueia o usuário e gera GRU.
