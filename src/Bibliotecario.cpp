@@ -21,7 +21,7 @@ bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn, const std::strin
         }
         return false;
     }
-    _dataEmprestimo = data;
+    setDataEmprestimo(data);
     std::cout << "Empréstimo realizado com sucesso." << std::endl;
     return true;
 }
@@ -34,4 +34,8 @@ bool Bibliotecario::liberarDevolucao(Usuario &u, CodISBN isbn){
 
 std::string Bibliotecario::gerarGRU(unsigned dias){
     // TODO - Implementar função
+}
+
+void Bibliotecario::setDataEmprestimo(const std::string &dataEmprestimo) {
+        _dataEmprestimo = dataEmprestimo;
 }
