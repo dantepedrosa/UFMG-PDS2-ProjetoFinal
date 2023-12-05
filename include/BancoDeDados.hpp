@@ -13,6 +13,9 @@
 #define FILE_ASSUNTO        "by_assunto.bibdb"      ///< Nome padrão do arquivo de categorização de assunto
 #define FILE_ANO            "by_ano.bibdb"          ///< Nome padrão do arquivo de categorização de ano
 
+
+class SistemaLivros;
+
 /// @brief Classe referente à manutenção e backup do SistemaLivros em arquivos CSV (*.csv) permanentes.
 /// @details Esta classe realiza a operação de leitura e escrita dos arquivos necessários 
 /// para evitar a perda de dados do sistema

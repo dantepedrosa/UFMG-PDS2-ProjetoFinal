@@ -26,8 +26,8 @@ void BancoDeDados::salvarAcervo(SistemaLivros &sl){
     
     // Abertura e escrita  do arquivo do acervo FILE_ACERVO
     std::string nomeArquivo = _folderPath + FILE_ACERVO;
-    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
-    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+    std::ofstream arquivo0(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo0.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
     for(std::pair<CodISBN, LivroDB> pair : sl.biblioteca){
         std::string dado = (
@@ -38,23 +38,25 @@ void BancoDeDados::salvarAcervo(SistemaLivros &sl){
             pair.second.anoPublicacao.append(",") + \
             std::to_string(pair.second.copias).append("\n")
         );
-        arquivo << dado;
+        arquivo0 << dado;
     }
 
+    arquivo0.close();
+
     // Abertura e escrita do arquivo do acervo FILE_EMPRESTIMOS
-    std::string nomeArquivo = _folderPath + FILE_EMPRESTIMOS;
-    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
-    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+    nomeArquivo = _folderPath + FILE_EMPRESTIMOS;
+    std::ofstream arquivo1(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo1.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
     for(std::pair<CodISBN, std::string> pair : sl.livrosEmprestados){
         std::string dado = (
             pair.first.append(",") + \
             pair.second.append("\n")
         );
-        arquivo << dado;
+        arquivo1 << dado;
     }
 
-    arquivo.close();
+    arquivo1.close();
 
     return;
 }
@@ -78,34 +80,34 @@ void BancoDeDados::salvarCategorias(SistemaLivros &sl){
     arquivo.close();
 
     // Abertura e escrita  do arquivo do acervo FILE_ASSUNTO
-    std::string nomeArquivo = _folderPath + FILE_ASSUNTO;
-    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
-    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+    nomeArquivo = _folderPath + FILE_ASSUNTO;
+    std::ofstream arquivo1(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo1.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
     for(auto categoria : sl.byAssunto){
-        arquivo << categoria.first;
+        arquivo1 << categoria.first;
         for(auto isbn : categoria.second){
-            arquivo << ',' << isbn;
+            arquivo1 << ',' << isbn;
         }
-        arquivo << '\n';
+        arquivo1 << '\n';
     }
 
-    arquivo.close();
+    arquivo1.close();
 
     // Abertura e escrita  do arquivo do acervo FILE_ANO
-    std::string nomeArquivo = _folderPath + FILE_ANO;
-    std::ofstream arquivo(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
-    if (!arquivo.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
+    nomeArquivo = _folderPath + FILE_ANO;
+    std::ofstream arquivo2(nomeArquivo, std::ofstream::trunc);   // Apagará o arquivo antes de escrever
+    if (!arquivo2.is_open()) throw std::runtime_error("Erro ao abrir o arquivo!");
 
     for(auto categoria : sl.byAno){
-        arquivo << categoria.first;
+        arquivo2 << categoria.first;
         for(auto isbn : categoria.second){
-            arquivo << ',' << isbn;
+            arquivo2 << ',' << isbn;
         }
-        arquivo << '\n';
+        arquivo2 << '\n';
     }
 
-    arquivo.close();
+    arquivo2.close();
 
     return;
 }

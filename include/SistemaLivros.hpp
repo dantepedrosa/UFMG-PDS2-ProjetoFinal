@@ -10,6 +10,8 @@
 #include "Livro.hpp"
 #include "BancoDeDados.hpp"
 
+class BancoDeDados;
+
 /// @brief Estrutuda de dado utilizada para salvar livros no banco de dados.
 struct LivroDB{
     std::string nome;
@@ -104,6 +106,5 @@ private:
 
     /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
     BancoDeDados bd;
-
 
 };
