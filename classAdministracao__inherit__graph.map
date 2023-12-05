@@ -1,0 +1,5 @@
+<map id="Administracao" name="Administracao">
+<area shape="rect" id="Node000001" title="Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins." alt="" coords="5,179,139,284"/>
+<area shape="rect" id="Node000002" href="$classUsuario.html" title="Classe base de usuários do sistema de biblioteca." alt="" coords="19,5,125,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,145,75,178,69,178,69,145"/>
+</map>

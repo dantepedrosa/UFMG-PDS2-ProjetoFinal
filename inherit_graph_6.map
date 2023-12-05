@@ -1,0 +1,9 @@
+<map id="Representação gráfica da hiearquia da classe" name="Representação gráfica da hiearquia da classe">
+<area shape="rect" id="Node000000" href="$classUsuario.html" title="Classe base de usuários do sistema de biblioteca." alt="" coords="5,55,77,80"/>
+<area shape="rect" id="Node000001" href="$classAdministracao.html" title="Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins." alt="" coords="129,5,245,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="89,48,147,28,149,33,91,53"/>
+<area shape="rect" id="Node000002" href="$classBibliotecario.html" title="Classe referente ao bibliotecário, que realiza ações a nível de empréstimo e devolução." alt="" coords="135,55,239,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="91,65,135,65,135,70,91,70"/>
+<area shape="rect" id="Node000003" href="$classUsuarioComum.html" title="Classe referente à usuários comuns de biblioteca, para solicitar empréstimo de livros,..." alt="" coords="125,104,248,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="91,81,149,101,147,106,89,86"/>
+</map>

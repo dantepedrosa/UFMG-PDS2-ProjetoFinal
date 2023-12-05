@@ -1,0 +1,5 @@
+<map id="UsuarioComum" name="UsuarioComum">
+<area shape="rect" id="Node000001" title="Classe referente à usuários comuns de biblioteca, para solicitar empréstimo de livros,..." alt="" coords="5,179,180,384"/>
+<area shape="rect" id="Node000002" href="$classUsuario.html" title="Classe base de usuários do sistema de biblioteca." alt="" coords="40,5,145,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,144,95,178,90,178,90,144"/>
+</map>

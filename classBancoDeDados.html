@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sistema de Biblioteca: Referência à classe BancoDeDados</title>
+<link rel="icon" href="dcc_logo.jpeg" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="dcc-ufmg-color-horizontal.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Sistema de Biblioteca<span id="projectnumber">&#160;v0.1</span>
+   </div>
+   <div id="projectbrief">Projeto final da disciplina Programação e Desenvolvimento de Software 2 - UFMG - 2023/2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('classBancoDeDados.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros públicos</a> &#124;
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="classBancoDeDados-members.html">Mostrar lista completa dos membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência à classe BancoDeDados</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classe referente à manutenção e backup do <a class="el" href="classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.">SistemaLivros</a> em arquivos CSV (*.csv) permanentes.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="BancoDeDados_8hpp_source.html">BancoDeDados.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para BancoDeDados:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBancoDeDados__coll__graph.png" border="0" usemap="#aBancoDeDados_coll__map" alt="Collaboration graph"/></div>
+<map name="aBancoDeDados_coll__map" id="aBancoDeDados_coll__map">
+<area shape="rect" title="Classe referente à manutenção e backup do SistemaLivros em arquivos CSV (*.csv) permanentes." alt="" coords="5,5,160,211"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros públicos</h2></td></tr>
+<tr class="memitem:a87cb10e10f30f6b2aa380375ce321804" id="r_a87cb10e10f30f6b2aa380375ce321804"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87cb10e10f30f6b2aa380375ce321804">BancoDeDados</a> (bool readFirst, std::string path, <a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;sl)</td></tr>
+<tr class="memdesc:a87cb10e10f30f6b2aa380375ce321804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe.  <br /></td></tr>
+<tr class="separator:a87cb10e10f30f6b2aa380375ce321804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0c4255f359be0dcfe9e4720f38fc2c" id="r_a4a0c4255f359be0dcfe9e4720f38fc2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a0c4255f359be0dcfe9e4720f38fc2c">lerBancoDeDados</a> (<a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;sl)</td></tr>
+<tr class="memdesc:a4a0c4255f359be0dcfe9e4720f38fc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abre o aquivo de acervo e categorias e salva nas listas em <a class="el" href="classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.">SistemaLivros</a>.  <br /></td></tr>
+<tr class="separator:a4a0c4255f359be0dcfe9e4720f38fc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967b72eeaf9dd14cb7bfb20ab870e622" id="r_a967b72eeaf9dd14cb7bfb20ab870e622"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a967b72eeaf9dd14cb7bfb20ab870e622">salvarAcervo</a> (<a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;sl)</td></tr>
+<tr class="memdesc:a967b72eeaf9dd14cb7bfb20ab870e622"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salva a lista referente ao acerto e empréstimo em arquivo de texto.  <br /></td></tr>
+<tr class="separator:a967b72eeaf9dd14cb7bfb20ab870e622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000fce0931ee4ebc94af598165ad5d24" id="r_a000fce0931ee4ebc94af598165ad5d24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a000fce0931ee4ebc94af598165ad5d24">salvarCategorias</a> (<a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;sl)</td></tr>
+<tr class="memdesc:a000fce0931ee4ebc94af598165ad5d24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Salva as listas de categorização em arquivo de texto.  <br /></td></tr>
+<tr class="separator:a000fce0931ee4ebc94af598165ad5d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:aad26324b77246f04e2fedc6c62eb76a9" id="r_aad26324b77246f04e2fedc6c62eb76a9"><td class="memItemLeft" align="right" valign="top">std::map&lt; CodISBN, <a class="el" href="structLivroDB.html">LivroDB</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad26324b77246f04e2fedc6c62eb76a9">_lerAcervo</a> (std::string path, std::string nome)</td></tr>
+<tr class="memdesc:aad26324b77246f04e2fedc6c62eb76a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a leitura de um arquivo *.csv do acervo.  <br /></td></tr>
+<tr class="separator:aad26324b77246f04e2fedc6c62eb76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04adf0c9be823d9fcc7ce2b19fe8a1f6" id="r_a04adf0c9be823d9fcc7ce2b19fe8a1f6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::pair&lt; CodISBN, std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04adf0c9be823d9fcc7ce2b19fe8a1f6">_lerEmprestimos</a> (std::string path, std::string nome)</td></tr>
+<tr class="memdesc:a04adf0c9be823d9fcc7ce2b19fe8a1f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a leitura de um arquivo *.csv do acervo.  <br /></td></tr>
+<tr class="separator:a04adf0c9be823d9fcc7ce2b19fe8a1f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac80705b0730f0f6a199a16c9cde509d" id="r_aac80705b0730f0f6a199a16c9cde509d"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::set&lt; CodISBN &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac80705b0730f0f6a199a16c9cde509d">_lerCategoria</a> (std::string path, std::string nome)</td></tr>
+<tr class="memdesc:aac80705b0730f0f6a199a16c9cde509d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza a leitura de um arquivo *.csv do acervo.  <br /></td></tr>
+<tr class="separator:aac80705b0730f0f6a199a16c9cde509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f5fb1aa2585f0b59b5bb8094a4b1c23" id="r_a4f5fb1aa2585f0b59b5bb8094a4b1c23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f5fb1aa2585f0b59b5bb8094a4b1c23">_setFolderPath</a> (std::string path)</td></tr>
+<tr class="memdesc:a4f5fb1aa2585f0b59b5bb8094a4b1c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configura o caminho da pasta de arquivos.  <br /></td></tr>
+<tr class="separator:a4f5fb1aa2585f0b59b5bb8094a4b1c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:acfa0920ebc5732a494fa22038a927cd6" id="r_acfa0920ebc5732a494fa22038a927cd6"><td class="memItemLeft" align="right" valign="top"><a id="acfa0920ebc5732a494fa22038a927cd6" name="acfa0920ebc5732a494fa22038a927cd6"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>_folderPath</b></td></tr>
+<tr class="memdesc:acfa0920ebc5732a494fa22038a927cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caminho relativo ou absoluto para a pasta com arquivos CSV (*.csv) <br /></td></tr>
+<tr class="separator:acfa0920ebc5732a494fa22038a927cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Classe referente à manutenção e backup do <a class="el" href="classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.">SistemaLivros</a> em arquivos CSV (*.csv) permanentes. </p>
+<p>Esta classe realiza a operação de leitura e escrita dos arquivos necessários para evitar a perda de dados do sistema </p>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a id="a87cb10e10f30f6b2aa380375ce321804" name="a87cb10e10f30f6b2aa380375ce321804"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87cb10e10f30f6b2aa380375ce321804">&#9670;&#160;</a></span>BancoDeDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BancoDeDados::BancoDeDados </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readFirst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;&#160;</td>
+          <td class="paramname"><em>sl</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor da classe. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">readFirst</td><td>Caso true, o sistema irá ler o arquivo existente e configurar. Caso false, cria arquivos do zero. </td></tr>
+    <tr><td class="paramname">path</td><td>Caminho para pasta que serão salvos os arquivos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="aad26324b77246f04e2fedc6c62eb76a9" name="aad26324b77246f04e2fedc6c62eb76a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad26324b77246f04e2fedc6c62eb76a9">&#9670;&#160;</a></span>_lerAcervo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; CodISBN, <a class="el" href="structLivroDB.html">LivroDB</a> &gt; BancoDeDados::_lerAcervo </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nome</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza a leitura de um arquivo *.csv do acervo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho para a pasta com os arquivos </td></tr>
+    <tr><td class="paramname">nome</td><td>Nome do arquivo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Mapa com informações de acervo </dd></dl>
+
+</div>
+</div>
+<a id="aac80705b0730f0f6a199a16c9cde509d" name="aac80705b0730f0f6a199a16c9cde509d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac80705b0730f0f6a199a16c9cde509d">&#9670;&#160;</a></span>_lerCategoria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; std::string, std::set&lt; CodISBN &gt; &gt; BancoDeDados::_lerCategoria </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nome</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza a leitura de um arquivo *.csv do acervo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho para a pasta com os arquivos </td></tr>
+    <tr><td class="paramname">nome</td><td>Nome do arquivo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Mapa com informações da categoria </dd></dl>
+
+</div>
+</div>
+<a id="a04adf0c9be823d9fcc7ce2b19fe8a1f6" name="a04adf0c9be823d9fcc7ce2b19fe8a1f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04adf0c9be823d9fcc7ce2b19fe8a1f6">&#9670;&#160;</a></span>_lerEmprestimos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::pair&lt; CodISBN, std::string &gt; &gt; BancoDeDados::_lerEmprestimos </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>nome</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Realiza a leitura de um arquivo *.csv do acervo. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Caminho para a pasta com os arquivos </td></tr>
+    <tr><td class="paramname">nome</td><td>Nome do arquivo </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Vetor com informações dos livros emprestados </dd></dl>
+
+</div>
+</div>
+<a id="a4f5fb1aa2585f0b59b5bb8094a4b1c23" name="a4f5fb1aa2585f0b59b5bb8094a4b1c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f5fb1aa2585f0b59b5bb8094a4b1c23">&#9670;&#160;</a></span>_setFolderPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BancoDeDados::_setFolderPath </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configura o caminho da pasta de arquivos. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">String</td><td>Contendo o caminho relativo ou completo para a pasta de arquivos </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a0c4255f359be0dcfe9e4720f38fc2c" name="a4a0c4255f359be0dcfe9e4720f38fc2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0c4255f359be0dcfe9e4720f38fc2c">&#9670;&#160;</a></span>lerBancoDeDados()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BancoDeDados::lerBancoDeDados </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;&#160;</td>
+          <td class="paramname"><em>sl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Abre o aquivo de acervo e categorias e salva nas listas em <a class="el" href="classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.">SistemaLivros</a>. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sl</td><td>Instância de Sistema Livros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True se bem sucedido e False caso haja falha </dd></dl>
+
+</div>
+</div>
+<a id="a967b72eeaf9dd14cb7bfb20ab870e622" name="a967b72eeaf9dd14cb7bfb20ab870e622"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967b72eeaf9dd14cb7bfb20ab870e622">&#9670;&#160;</a></span>salvarAcervo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BancoDeDados::salvarAcervo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;&#160;</td>
+          <td class="paramname"><em>sl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Salva a lista referente ao acerto e empréstimo em arquivo de texto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sl</td><td>Instância de Sistema Livros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True se bem sucedido e False caso haja falha </dd></dl>
+
+</div>
+</div>
+<a id="a000fce0931ee4ebc94af598165ad5d24" name="a000fce0931ee4ebc94af598165ad5d24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000fce0931ee4ebc94af598165ad5d24">&#9670;&#160;</a></span>salvarCategorias()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BancoDeDados::salvarCategorias </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classSistemaLivros.html">SistemaLivros</a> &amp;&#160;</td>
+          <td class="paramname"><em>sl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Salva as listas de categorização em arquivo de texto. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sl</td><td>Instância de Sistema Livros </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>True se bem sucedido e False caso haja falha </dd></dl>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
+<li>include/<a class="el" href="BancoDeDados_8hpp_source.html">BancoDeDados.hpp</a></li>
+<li>src/<b>BancoDeDados.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="classBancoDeDados.html">BancoDeDados</a></li>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

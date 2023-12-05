@@ -1,0 +1,9 @@
+<map id="Administracao" name="Administracao">
+<area shape="rect" id="Node000001" title="Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins." alt="" coords="39,621,173,727"/>
+<area shape="rect" id="Node000002" href="$classUsuario.html" title="Classe base de usuários do sistema de biblioteca." alt="" coords="5,353,111,479"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,492,99,621,94,622,69,493"/>
+<area shape="rect" id="Node000003" href="$classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo." alt="" coords="134,273,283,559"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="154,560,135,607,130,605,149,558"/>
+<area shape="rect" id="Node000004" href="$classBancoDeDados.html" title="Classe referente à manutenção e backup do SistemaLivros em arquivos CSV (*.csv) permanentes." alt="" coords="131,5,286,211"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="211,211,211,257,206,257,206,211"/>
+</map>

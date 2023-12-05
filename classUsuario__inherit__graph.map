@@ -1,0 +1,9 @@
+<map id="Usuario" name="Usuario">
+<area shape="rect" id="Node000001" title="Classe base de usuários do sistema de biblioteca." alt="" coords="195,5,301,131"/>
+<area shape="rect" id="Node000002" href="$classAdministracao.html" title="Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins." alt="" coords="5,229,139,334"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,139,153,180,113,230,109,227,149,177,184,136"/>
+<area shape="rect" id="Node000003" href="$classBibliotecario.html" title="Classe referente ao bibliotecário, que realiza ações a nível de empréstimo e devolução." alt="" coords="163,219,333,344"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,144,251,218,245,218,245,144"/>
+<area shape="rect" id="Node000004" href="$classUsuarioComum.html" title="Classe referente à usuários comuns de biblioteca, para solicitar empréstimo de livros,..." alt="" coords="357,179,531,384"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,135,358,184,355,188,309,138"/>
+</map>
