@@ -11,6 +11,10 @@ public:
     /// @param nome Nome de usuário (aceito apenas letras sem espaço). Max. 20 characteres
     /// @param senha senha do usuário (apenas números)
     Usuario(std::string nome, int senha);
+
+    /// @brief Retorna o nome do usuário
+    /// @return Nome de usuário
+    std::string getNome();
     
 private:
 
