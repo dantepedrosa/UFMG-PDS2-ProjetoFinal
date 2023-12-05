@@ -1,5 +1,7 @@
 #include <string>
-
+#include <iostream>
+#include <stdexcept>
+#include <sstream>
 
 typedef std::string CodISBN;
 
