@@ -1,24 +1,20 @@
 #include "Administracao.hpp"
 
-bool Administracao::adcionarLivro(Livro livro){
-
-bool sucesso = SistemaLivros::adicionarLivro(livro);
-
-    if (sucesso) {
-        std::cout << "Livro adicionado com sucesso pela Administração." << std::endl;
-    } else {
-        std::cout << "Falha ao adicionar o livro pela Administração." << std::endl;
-    }
-    return sucesso;
+Administracao::Administracao(std::string nome, int senha): Usuario(nome, senha){
+    SistemaLivros _sl();
 }
 
-bool Administracao::removerLivro(Livro livro){
-    bool sucesso = SistemaLivros::removerLivro(livro);
 
-    if (sucesso) {
-        std::cout << "Livro removido com sucesso pela Administração." << std::endl;
-    } else {
-        std::cout << "Falha ao remover o livro pela Administração." << std::endl;
-    }
-    return sucesso;
+void Administracao::adcionarLivro(Livro livro){
+
+    _sl.adicionarLivro(livro);
+
+    return;
+}
+
+void Administracao::removerLivro(Livro livro){
+    
+    _sl.removerLivro(livro);
+
+    return;
 }
