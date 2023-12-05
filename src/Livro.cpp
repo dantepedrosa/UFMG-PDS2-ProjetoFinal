@@ -1,7 +1,3 @@
-#include <iostream>
-#include <stdexcept>
-#include <sstream>
-
 #include "Livro.hpp"
 
 
