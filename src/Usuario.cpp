@@ -1,11 +1,12 @@
 #include "Usuario.hpp"
 
 
-Usuario::Usuario(std::string nome, int senha) : _senha(senha){
+Usuario::Usuario(std::string nome, int senha){
     _setNome(nome);
+    _senha = senha;
 }
 
-void _setNome(std::string nome){
+void Usuario::_setNome(std::string nome){
 
     // Confere o tamanho do nome
     if(nome.length() > 20) 
@@ -16,4 +17,10 @@ void _setNome(std::string nome){
         if(!((letra >= 'A' && letra <= 'Z') || (letra >= 'a' && letra <= 'z'))) 
             throw std::invalid_argument("O nome deve possuir apenas letras.");
     }
+
+    
+}
+
+std::string Usuario::getNome(){
+    return _nome;
 }

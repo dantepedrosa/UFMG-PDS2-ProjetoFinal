@@ -4,33 +4,16 @@
 
 #include "UsuarioComum.hpp"
 
-class ExcecaoLivroJaEmprestado{}
+class ExcecaoLivroJaEmprestado{};
 
-UsuarioComum::UsuarioComum(std::string nome, int senha){
-    //verificador, se contém algo diferente de número e letra na string recebe true
-    bool verificador = false;
-
-    for (auto c : nome) {
-        if (!isalpha(c) && !isdigit(c)) {
-            verificador = true;
-            break;
-        }
-    }
-
-    if (verificador) 
-    throw std::invalid_argument("Nome inválido! Utilize apenas números e letras.");
-    
-    this->nome = nome;
-    this->senha = senha;
-};
-
+UsuarioComum::UsuarioComum(std::string nome, int senha) : Usuario(nome, senha){};
 
 
 bool UsuarioComum::solicitarEmprestimo(CodISBN isbn){
     if (_comPendencia)
     throw std::invalid_argument("Usuário com pendência. Não é possível realizar o empréstimo.");
         
-    if (_livrosEmprestados.find(isbn) != _livrosEmprestados.end()) 
+    if (livrosEmprestados.find(isbn) != livrosEmprestados.end()) 
     throw std::invalid_argument("Livro já emprestado pelo usuário.");
     
     return true;
@@ -38,9 +21,9 @@ bool UsuarioComum::solicitarEmprestimo(CodISBN isbn){
 
 
 bool UsuarioComum::devolverLivro(CodISBN isbn){
-auto it = _livrosEmprestados.find(isbn);
+auto it = livrosEmprestados.find(isbn);
     
-    if (it == _livrosEmprestados.end())
+    if (it == livrosEmprestados.end())
     throw std::invalid_argument("O livro não foi emprestado por este usuário.");
     
     return true;
@@ -70,8 +53,13 @@ bool UsuarioComum::getPendencia() const {
 }
 
 bool UsuarioComum::temLivroEmprestado() const{
-    if(!_livrosEmprestados.empty()){
+    if(!livrosEmprestados.empty()){
         return true;
     }
     return false;
+}
+
+
+std::string Usuario::getNome(){
+    return _nome;
 }

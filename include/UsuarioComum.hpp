@@ -13,7 +13,7 @@ struct Data{
     unsigned ano;
 };
 
-class UsuarioComum : Usuario {
+class UsuarioComum : public  Usuario {
 public:
     
     /// @brief Construtor da classe Usuário
@@ -46,12 +46,11 @@ public:
     /// @return True se o usuário tiver algum livro emprestado, false caso contrário
     bool temLivroEmprestado() const;
 
-    // FIXME - bool solicitarEmprestimo(this, isbn); // Tirar dúvida se usuário pode chamar bibliotecario enviando ele mesmo
-    // FIXME - Professor vai tirar ponto por não cumprir entrega parcial
-    // FIXME - Perguntar pro professor se deve ser criado mais classes que já existem
+    std::map<CodISBN, Data> livrosEmprestados;
+
+
 private:
     
-    std::map<CodISBN, Data> _livrosEmprestados;
     bool _comPendencia = false;
     std::set<std::string> _grusAPagar;
     
