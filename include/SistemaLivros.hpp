@@ -4,7 +4,9 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <string>
 
+#include "UsuarioComum.hpp"
 #include "Livro.hpp"
 #include "BancoDeDados.hpp"
 
@@ -18,23 +20,24 @@ struct LivroDB{
 };
 
 /// @brief Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.
-
 class SistemaLivros {
 public:
+
+    SistemaLivros(bool readFirst, std::string path);
 
     /// @brief Inclui livro nas listas e adciona ao banco de dados.
     /// @details Esta função adciona às listas da própria classe 
     /// (_biblioteca, _byAno, etc) e salva as informações no banco de dados.
     /// @param livro Instancia de Livro
     /// @return True se bem sucedido e False caso haja falha
-    bool adcionarLivro(Livro livro);
+    bool adicionarLivro(Livro livro);
 
     /// @brief Cria uma cópia do livro ter que incluir tudo
     /// @details Esta função incrementa o número de cópias à 
     /// lista _biblioteca e salva as informações no banco de dados.
     /// @param isbn Código de livro
     /// @return True se bem sucedido e False caso haja falha
-    bool adcionarLivro(CodISBN isbn);
+    bool adicionarLivro(CodISBN isbn);
 
     /// @brief Edita as informações de um livro já existente no sistema
     /// @details Esta função edita as informações de um livro já existente em 
@@ -60,7 +63,7 @@ public:
     /// @brief Retira um livro do sistema de biblioteca
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e False caso haja falha 
-    bool emprestarLivro(CodISBN isbn);
+    bool emprestarLivro(CodISBN isbn, UsuarioComum &u);
 
     /// @brief Retorna um livro ao sistema de biblioteca
     /// @param isbn Código ISBN do livro
