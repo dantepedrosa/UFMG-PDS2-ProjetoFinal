@@ -1,8 +1,6 @@
 #include "Administracao.hpp"
 
-Administracao::Administracao(std::string nome, int senha): Usuario(nome, senha){
-    SistemaLivros _sl();
-}
+Administracao::Administracao(std::string nome, int senha) : Usuario(nome, senha) {}
 
 
 void Administracao::adcionarLivro(Livro livro){

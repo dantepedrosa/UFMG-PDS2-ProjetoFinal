@@ -1,8 +1,7 @@
 #include "SistemaLivros.hpp"
 
 
-SistemaLivros::SistemaLivros(bool readFirst, std::string path){
-    BancoDeDados(readFirst, path, *this);
+SistemaLivros::SistemaLivros(bool readFirst, std::string path) : bd(readFirst, path, *this){
     if(readFirst){
         bd.lerBancoDeDados(*this);
     }
@@ -108,8 +107,11 @@ bool SistemaLivros::emprestarLivro(CodISBN isbn, UsuarioComum &u){
 		return false;
 	}
 
+    std::pair<CodISBN, std::string> dado;
+    dado.first = isbn;
+    dado.second = u.getNome();
 
-    livrosEmprestados.push_back(std::make_pair(isbn, u.getNome()));
+    livrosEmprestados.push_back(dado);
 
     std::cout << "Livro emprestado com sucesso." << std::endl;
     return true;

@@ -23,6 +23,9 @@ struct LivroDB{
 class SistemaLivros {
 public:
 
+    /// @brief Construtor da classe sistema livros
+    /// @param readFirst Define se haverá leitura inicial ou não
+    /// @param path Caminho para a pasta de arquivos
     SistemaLivros(bool readFirst, std::string path);
 
     /// @brief Inclui livro nas listas e adciona ao banco de dados.

@@ -3,8 +3,8 @@
 #include "Usuario.hpp"
 #include "Livro.hpp"
 
-class Bibliotecario : Usuario{
-public:
+class Bibliotecario : public  Usuario{
+public: 
 
     /// @brief Consolida empréstimo no sistema de livros
     /// @details Caso possua algum livro atrasado ou pendência, bloqueia o usuário.

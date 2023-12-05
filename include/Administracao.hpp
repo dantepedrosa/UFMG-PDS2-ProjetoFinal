@@ -4,7 +4,7 @@
 #include "Livro.hpp"
 #include "SistemaLivros.hpp"
 
-class Administracao : Usuario{
+class Administracao : public  Usuario{
 public:
 
     /// @brief Construtor da classe de usuários da administração do sistema de bibliotecas 
@@ -28,6 +28,6 @@ public:
 
 private:
 
-    SistemaLivros _sl;  ///< Intância de sistema livros.
+    SistemaLivros _sl();  ///< Intância de sistema livros.
 
 };
