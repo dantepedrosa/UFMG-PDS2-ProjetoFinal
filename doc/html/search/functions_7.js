@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_20result_0',['operator Result',['../da/dcd/structdoctest_1_1detail_1_1Expression__lhs.html#aa0ab4a18aac56bfb02fba8970ed304b3',1,'doctest::detail::Expression_lhs']]]
+  ['pagargru_0',['pagarGRU',['../classUsuarioComum.html#a8643c4d6fe8a8448b3f9045a080ebfd7',1,'UsuarioComum']]]
 ];

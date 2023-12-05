@@ -6,10 +6,15 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Sistema de Biblioteca: Componentes membro</title>
+<link rel="icon" href="dcc_logo.jpeg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,6 +33,7 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="dcc-ufmg-color-horizontal.png"/></td>
   <td id="projectalign">
    <div id="projectname">Sistema de Biblioteca<span id="projectnumber">&#160;v0.1</span>
    </div>
@@ -54,8 +60,24 @@ $(function() {
 });
 /* @license-end */
 </script>
-</div><!-- top -->
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('functions.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -81,91 +103,110 @@ $(function() {
 <div class="textblock">Lista de todas as classes membro documentadas com referência para a documentação de cada membro:</div>
 
 <h3><a id="index__5F" name="index__5F"></a>- _ -</h3><ul>
-<li>_anoPublicacao&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#a70015fca779b936faf05db230940a91a">Livro</a></li>
-<li>_assunto&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#af99b99f56664984033deed9cd530fcd1">Livro</a></li>
-<li>_autor&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#a24ec7672f107230355e063250ca40858">Livro</a></li>
-<li>_biblioteca&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#aeb2f8beffd5607b6c0dbb47dd560e51d">SistemaLivros</a></li>
-<li>_byAno&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#a52a791524413f711d3053766d16cfe5d">SistemaLivros</a></li>
-<li>_byAssunto&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#a1ae4a2ed06624f29d0b362fd2e3433b2">SistemaLivros</a></li>
-<li>_byAutor&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#ae7c72c9fc4813fb683d39c06f409bbca">SistemaLivros</a></li>
-<li>_isbn&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#ad6695ff4cb9c348e7f86e74ba4e2e5e8">Livro</a></li>
-<li>_livrosEmprestados&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#aa28e6def36bcade63afaad119176c976">SistemaLivros</a></li>
-<li>_nomeLivro&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#a3c1bb7ddeaad44164d97f289ce4f0de3">Livro</a></li>
-<li>_setAnoPublicacao()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#aa4b9f293e428f57fd1c534a1da51c064">Livro</a></li>
-<li>_setISBN()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#a683d52fd7a7c8be7a0cfb425843ebd87">Livro</a></li>
+<li>_anoPublicacao&#160;:&#160;<a class="el" href="classLivro.html#a70015fca779b936faf05db230940a91a">Livro</a></li>
+<li>_assunto&#160;:&#160;<a class="el" href="classLivro.html#af99b99f56664984033deed9cd530fcd1">Livro</a></li>
+<li>_autor&#160;:&#160;<a class="el" href="classLivro.html#a24ec7672f107230355e063250ca40858">Livro</a></li>
+<li>_cmpDigitoVerificador()&#160;:&#160;<a class="el" href="classLivro.html#a8426a4de4e437e8015313ab3535ec378">Livro</a></li>
+<li>_folderPath&#160;:&#160;<a class="el" href="classBancoDeDados.html#acfa0920ebc5732a494fa22038a927cd6">BancoDeDados</a></li>
+<li>_isbn&#160;:&#160;<a class="el" href="classLivro.html#ad6695ff4cb9c348e7f86e74ba4e2e5e8">Livro</a></li>
+<li>_lerAcervo()&#160;:&#160;<a class="el" href="classBancoDeDados.html#aad26324b77246f04e2fedc6c62eb76a9">BancoDeDados</a></li>
+<li>_lerCategoria()&#160;:&#160;<a class="el" href="classBancoDeDados.html#aac80705b0730f0f6a199a16c9cde509d">BancoDeDados</a></li>
+<li>_lerEmprestimos()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a04adf0c9be823d9fcc7ce2b19fe8a1f6">BancoDeDados</a></li>
+<li>_nome&#160;:&#160;<a class="el" href="classUsuario.html#a116902785cc904363bd82f5ced971d71">Usuario</a></li>
+<li>_nomeLivro&#160;:&#160;<a class="el" href="classLivro.html#a3c1bb7ddeaad44164d97f289ce4f0de3">Livro</a></li>
+<li>_senha&#160;:&#160;<a class="el" href="classUsuario.html#ab2e2d37223aa44e79fb09c258df265b7">Usuario</a></li>
+<li>_setAnoPublicacao()&#160;:&#160;<a class="el" href="classLivro.html#aa4b9f293e428f57fd1c534a1da51c064">Livro</a></li>
+<li>_setFolderPath()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a4f5fb1aa2585f0b59b5bb8094a4b1c23">BancoDeDados</a></li>
+<li>_setISBN()&#160;:&#160;<a class="el" href="classLivro.html#a33c1319d5f42f0900b81fb48d2d476b9">Livro</a></li>
+<li>_setNome()&#160;:&#160;<a class="el" href="classUsuario.html#a620feab9e79d7c60d2700abf84d198d2">Usuario</a></li>
+<li>_sl&#160;:&#160;<a class="el" href="classAdministracao.html#aebd25e61bdbebadc79faa73a5c9000e7">Administracao</a></li>
 </ul>
 
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
-<li>adcionarLivro()&#160;:&#160;<a class="el" href="d7/d8f/classAdministracao.html#a8541d7d0f7236726b03ba868ff071d36">Administracao</a>, <a class="el" href="d8/d28/classSistemaLivros.html#af4cf0da415190b28c077bbaeab6fffbf">SistemaLivros</a></li>
+<li>adcionarLivro()&#160;:&#160;<a class="el" href="classAdministracao.html#aee38e58b1de87214af634f75a5852170">Administracao</a></li>
+<li>adicionarLivro()&#160;:&#160;<a class="el" href="classSistemaLivros.html#a7574f7a18fa3a9b4c9a9c5a8860953aa">SistemaLivros</a></li>
+<li>Administracao()&#160;:&#160;<a class="el" href="classAdministracao.html#a2e203a684f9a7dc44487da95692f1c9e">Administracao</a></li>
 </ul>
 
 
 <h3><a id="index_b" name="index_b"></a>- b -</h3><ul>
-<li>BancoDeDados()&#160;:&#160;<a class="el" href="d3/d4b/classBancoDeDados.html#abf141db1e942cb54dae0bb9c19943bec">BancoDeDados</a></li>
-<li>bd&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#ab89b61d8fe325b3449e0f9af8389afef">SistemaLivros</a></li>
+<li>BancoDeDados()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a87cb10e10f30f6b2aa380375ce321804">BancoDeDados</a></li>
+<li>bd&#160;:&#160;<a class="el" href="classSistemaLivros.html#ab9634ebc7f8b151ecb78779277360596">SistemaLivros</a></li>
+<li>biblioteca&#160;:&#160;<a class="el" href="classSistemaLivros.html#a63dceff76782af5f9bf8bebe3557e59b">SistemaLivros</a></li>
+<li>byAno&#160;:&#160;<a class="el" href="classSistemaLivros.html#a6d6f9f1dd1ca8ac3a9d21f814cdefdd6">SistemaLivros</a></li>
+<li>byAssunto&#160;:&#160;<a class="el" href="classSistemaLivros.html#aac194999ee0496b9970bacfa68a467cb">SistemaLivros</a></li>
+<li>byAutor&#160;:&#160;<a class="el" href="classSistemaLivros.html#a71dc6cef3409b01929d2810eea9111ce">SistemaLivros</a></li>
 </ul>
 
 
 <h3><a id="index_d" name="index_d"></a>- d -</h3><ul>
-<li>devolverLivro()&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#a54b1ebcad488a9a4fad2556fae345a7c">SistemaLivros</a>, <a class="el" href="d7/dbf/classUsuarioComum.html#af848d791cdf0e9e24f55635f26012b80">UsuarioComum</a></li>
+<li>devolverLivro()&#160;:&#160;<a class="el" href="classSistemaLivros.html#a54b1ebcad488a9a4fad2556fae345a7c">SistemaLivros</a>, <a class="el" href="classUsuarioComum.html#af848d791cdf0e9e24f55635f26012b80">UsuarioComum</a></li>
 </ul>
 
 
 <h3><a id="index_e" name="index_e"></a>- e -</h3><ul>
-<li>editarLivro()&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#af383882bcaa03c6161ac7c60eddfc476">SistemaLivros</a></li>
-<li>emprestarLivro()&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#ad7297502b2bfd3ed6631a65687534bd0">SistemaLivros</a></li>
+<li>editarLivro()&#160;:&#160;<a class="el" href="classSistemaLivros.html#af383882bcaa03c6161ac7c60eddfc476">SistemaLivros</a></li>
+<li>emprestarLivro()&#160;:&#160;<a class="el" href="classSistemaLivros.html#a638f5935d94eb148641f8739de94d83a">SistemaLivros</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
-<li>gerarGRU()&#160;:&#160;<a class="el" href="d7/dc0/classBibliotecario.html#a425d97a27f5ca8f92f666db9aa5d11ea">Bibliotecario</a></li>
-<li>getAno()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#a4b73af9f4c0b09af89749018ef4dd35d">Livro</a></li>
-<li>getAssunto()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#abc8a59029abe0929477ab975fa8065fe">Livro</a></li>
-<li>getAutor()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#aefbf479a0dd8b0621aa82baa35feb9e6">Livro</a></li>
-<li>getISBN()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#afe59da9f71a33bd2dbf0a0e198e1b3fe">Livro</a></li>
-<li>getNome()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#abf4fe98bd5cfcbba9e95932ec1cced5f">Livro</a></li>
+<li>gerarGRU()&#160;:&#160;<a class="el" href="classBibliotecario.html#a425d97a27f5ca8f92f666db9aa5d11ea">Bibliotecario</a></li>
+<li>getAno()&#160;:&#160;<a class="el" href="classLivro.html#a4b73af9f4c0b09af89749018ef4dd35d">Livro</a></li>
+<li>getAssunto()&#160;:&#160;<a class="el" href="classLivro.html#abc8a59029abe0929477ab975fa8065fe">Livro</a></li>
+<li>getAutor()&#160;:&#160;<a class="el" href="classLivro.html#aefbf479a0dd8b0621aa82baa35feb9e6">Livro</a></li>
+<li>getISBN()&#160;:&#160;<a class="el" href="classLivro.html#afe59da9f71a33bd2dbf0a0e198e1b3fe">Livro</a></li>
+<li>getNome()&#160;:&#160;<a class="el" href="classLivro.html#abf4fe98bd5cfcbba9e95932ec1cced5f">Livro</a>, <a class="el" href="classUsuario.html#a9fd39b37a8f38cfd990aba2234de9ea0">Usuario</a></li>
+<li>getPendencia()&#160;:&#160;<a class="el" href="classUsuarioComum.html#a508621c39ad2ba8ddf6dfe1e2cd5fcf8">UsuarioComum</a></li>
 </ul>
 
 
 <h3><a id="index_l" name="index_l"></a>- l -</h3><ul>
-<li>last&#160;:&#160;<a class="el" href="db/d0c/classdoctest_1_1String.html#a851ddfd0d6b457e7acbceff88d1d78d8">doctest::String</a></li>
-<li>liberarDevolucao()&#160;:&#160;<a class="el" href="d7/dc0/classBibliotecario.html#afbd596fecec53da178b89a4301bfcffa">Bibliotecario</a></li>
-<li>liberarEmprestimo()&#160;:&#160;<a class="el" href="d7/dc0/classBibliotecario.html#a85df3690a81fc0dd0469c08a6f4d22d5">Bibliotecario</a></li>
-<li>Livro()&#160;:&#160;<a class="el" href="d5/d7a/classLivro.html#ada95052b4fb4925d70086d4dbac6dda6">Livro</a></li>
-</ul>
-
-
-<h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
-<li>operator Result()&#160;:&#160;<a class="el" href="da/dcd/structdoctest_1_1detail_1_1Expression__lhs.html#aa0ab4a18aac56bfb02fba8970ed304b3">doctest::detail::Expression_lhs&lt; L &gt;</a></li>
+<li>lerBancoDeDados()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a4a0c4255f359be0dcfe9e4720f38fc2c">BancoDeDados</a></li>
+<li>liberarDevolucao()&#160;:&#160;<a class="el" href="classBibliotecario.html#a38e5a885ef03edf64cd1fa50d118f6b3">Bibliotecario</a></li>
+<li>liberarEmprestimo()&#160;:&#160;<a class="el" href="classBibliotecario.html#acd4ad354772f1c5a9cf7f2d3adffc67b">Bibliotecario</a></li>
+<li>Livro()&#160;:&#160;<a class="el" href="classLivro.html#aadc1568e10e591b7b0489119e0748df5">Livro</a></li>
+<li>livrosEmprestados&#160;:&#160;<a class="el" href="classSistemaLivros.html#af0ad559cc2265ed9e7a0429bd3f1ed31">SistemaLivros</a></li>
 </ul>
 
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>pagarGRU()&#160;:&#160;<a class="el" href="d7/dbf/classUsuarioComum.html#a8643c4d6fe8a8448b3f9045a080ebfd7">UsuarioComum</a></li>
+<li>pagarGRU()&#160;:&#160;<a class="el" href="classUsuarioComum.html#a8643c4d6fe8a8448b3f9045a080ebfd7">UsuarioComum</a></li>
 </ul>
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
-<li>removerLivro()&#160;:&#160;<a class="el" href="d7/d8f/classAdministracao.html#a2da4e73fac4959e5febb997d3ff4d281">Administracao</a>, <a class="el" href="d8/d28/classSistemaLivros.html#a8152698a7cbf83742723a631693655f9">SistemaLivros</a></li>
+<li>removerLivro()&#160;:&#160;<a class="el" href="classAdministracao.html#a1a73876ad55cdb751bc4826c331a8f60">Administracao</a>, <a class="el" href="classSistemaLivros.html#a8152698a7cbf83742723a631693655f9">SistemaLivros</a></li>
 </ul>
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
-<li>salvarListas()&#160;:&#160;<a class="el" href="d8/d28/classSistemaLivros.html#a160e50e3d1e07d6bd13de7248431c88f">SistemaLivros</a></li>
-<li>solicitarEmprestimo()&#160;:&#160;<a class="el" href="d7/dbf/classUsuarioComum.html#ad1051f18d3d733ca20d43398717e951b">UsuarioComum</a></li>
+<li>salvarAcervo()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a967b72eeaf9dd14cb7bfb20ab870e622">BancoDeDados</a></li>
+<li>salvarCategorias()&#160;:&#160;<a class="el" href="classBancoDeDados.html#a000fce0931ee4ebc94af598165ad5d24">BancoDeDados</a></li>
+<li>salvarListas()&#160;:&#160;<a class="el" href="classSistemaLivros.html#a160e50e3d1e07d6bd13de7248431c88f">SistemaLivros</a></li>
+<li>setDataEmprestimo()&#160;:&#160;<a class="el" href="classBibliotecario.html#aa8e4b47d01d975bd654fb94834e3622e">Bibliotecario</a></li>
+<li>SistemaLivros()&#160;:&#160;<a class="el" href="classSistemaLivros.html#a6e2e2b4184fc383a400b616ca237c62f">SistemaLivros</a></li>
+<li>solicitarEmprestimo()&#160;:&#160;<a class="el" href="classUsuarioComum.html#ad1051f18d3d733ca20d43398717e951b">UsuarioComum</a></li>
+</ul>
+
+
+<h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
+<li>temLivroEmprestado()&#160;:&#160;<a class="el" href="classUsuarioComum.html#af3a5f94633e5af3221cf3c12b7a15e43">UsuarioComum</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
-<li>unary_assert()&#160;:&#160;<a class="el" href="d9/d68/structdoctest_1_1detail_1_1ResultBuilder.html#a63a2a19638f4a761c70abd5563e2d23a">doctest::detail::ResultBuilder</a></li>
-<li>Usuario()&#160;:&#160;<a class="el" href="d1/d07/classUsuario.html#aca005d5d442b38b00d33350e117cb036">Usuario</a></li>
-<li>UsuarioComum()&#160;:&#160;<a class="el" href="d7/dbf/classUsuarioComum.html#a58f25f54885aaba0e1a246453ed4f51c">UsuarioComum</a></li>
+<li>Usuario()&#160;:&#160;<a class="el" href="classUsuario.html#aca005d5d442b38b00d33350e117cb036">Usuario</a></li>
+<li>UsuarioComum()&#160;:&#160;<a class="el" href="classUsuarioComum.html#a58f25f54885aaba0e1a246453ed4f51c">UsuarioComum</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>

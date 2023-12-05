@@ -1,0 +1,5 @@
+<map id="Bibliotecario" name="Bibliotecario">
+<area shape="rect" id="Node000001" title="Classe referente ao bibliotecário, que realiza ações a nível de empréstimo e devolução." alt="" coords="5,179,175,304"/>
+<area shape="rect" id="Node000002" href="$classUsuario.html" title="Classe base de usuários do sistema de biblioteca." alt="" coords="37,5,143,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,145,93,178,87,178,87,145"/>
+</map>

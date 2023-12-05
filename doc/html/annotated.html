@@ -6,10 +6,15 @@
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Sistema de Biblioteca: Lista de componentes</title>
+<link rel="icon" href="dcc_logo.jpeg" type="image/x-icon" />
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
 <script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -28,6 +33,7 @@ MathJax.Hub.Config({
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="dcc-ufmg-color-horizontal.png"/></td>
   <td id="projectalign">
    <div id="projectname">Sistema de Biblioteca<span id="projectnumber">&#160;v0.1</span>
    </div>
@@ -54,8 +60,24 @@ $(function() {
 });
 /* @license-end */
 </script>
-</div><!-- top -->
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('annotated.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -82,90 +104,26 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock">Lista de classes, estruturas, uniões e interfaces com uma breve descrição:</div><div class="directory">
-<div class="levels">[nível de detalhes <span onclick="javascript:dynsection.toggleLevel(1);">1</span><span onclick="javascript:dynsection.toggleLevel(2);">2</span><span onclick="javascript:dynsection.toggleLevel(3);">3</span><span onclick="javascript:dynsection.toggleLevel(4);">4</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="dynsection.toggleFolder('0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><b>doctest</b></td><td class="desc"></td></tr>
-<tr id="row_0_0_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="dynsection.toggleFolder('0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><b>detail</b></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span id="arr_0_0_0_" class="arrow" onclick="dynsection.toggleFolder('0_0_0_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><b>types</b></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_0_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dce/structdoctest_1_1detail_1_1types_1_1enable__if.html" target="_self">enable_if</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_1_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/df4/structdoctest_1_1detail_1_1types_1_1enable__if_3_01true_00_01T_01_4.html" target="_self">enable_if&lt; true, T &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_2_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/d79/structdoctest_1_1detail_1_1types_1_1false__type.html" target="_self">false_type</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_3_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d7f/structdoctest_1_1detail_1_1types_1_1is__array.html" target="_self">is_array</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_4_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d53/structdoctest_1_1detail_1_1types_1_1is__array_3_01T_0fSIZE_0e_4.html" target="_self">is_array&lt; T[SIZE]&gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_5_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/db9/structdoctest_1_1detail_1_1types_1_1is__enum.html" target="_self">is_enum</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_6_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/d70/structdoctest_1_1detail_1_1types_1_1is__pointer.html" target="_self">is_pointer</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_7_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d48/structdoctest_1_1detail_1_1types_1_1is__pointer_3_01T_01_5_01_4.html" target="_self">is_pointer&lt; T * &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_8_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d5e/structdoctest_1_1detail_1_1types_1_1is__rvalue__reference.html" target="_self">is_rvalue_reference</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_9_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/df9/structdoctest_1_1detail_1_1types_1_1is__rvalue__reference_3_01T_01_6_6_01_4.html" target="_self">is_rvalue_reference&lt; T &amp;&amp; &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_10_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/dd3/structdoctest_1_1detail_1_1types_1_1remove__const.html" target="_self">remove_const</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_11_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/d4e/structdoctest_1_1detail_1_1types_1_1remove__const_3_01const_01T_01_4.html" target="_self">remove_const&lt; const T &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_12_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/d3e/structdoctest_1_1detail_1_1types_1_1remove__reference.html" target="_self">remove_reference</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_13_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d70/structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_01_4.html" target="_self">remove_reference&lt; T &amp; &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_14_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/dc0/structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_6_01_4.html" target="_self">remove_reference&lt; T &amp;&amp; &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_15_" class="even"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/de8/structdoctest_1_1detail_1_1types_1_1true__type.html" target="_self">true_type</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_0_16_" class="odd"><td class="entry"><span style="width:64px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/dab/structdoctest_1_1detail_1_1types_1_1underlying__type.html" target="_self">underlying_type</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_1_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/dc8/classdoctest_1_1detail_1_1ContextScope.html" target="_self">ContextScope</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_2_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/db7/structdoctest_1_1detail_1_1ContextScopeBase.html" target="_self">ContextScopeBase</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_3_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/d8f/structdoctest_1_1detail_1_1deferred__false.html" target="_self">deferred_false</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_4_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/dcb/classdoctest_1_1detail_1_1ExceptionTranslator.html" target="_self">ExceptionTranslator</a></td><td class="desc">OCLINT destructor of virtual class </td></tr>
-<tr id="row_0_0_5_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/dcd/structdoctest_1_1detail_1_1Expression__lhs.html" target="_self">Expression_lhs</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_6_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/de6/structdoctest_1_1detail_1_1ExpressionDecomposer.html" target="_self">ExpressionDecomposer</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_7_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/ded/structdoctest_1_1detail_1_1filldata.html" target="_self">filldata</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_8_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d0c/structdoctest_1_1detail_1_1filldata_3_01const_01char_0fN_0e_4.html" target="_self">filldata&lt; const char[N]&gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_9_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/d3c/structdoctest_1_1detail_1_1filldata_3_01const_01void_01_5_01_4.html" target="_self">filldata&lt; const void * &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_10_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d42/structdoctest_1_1detail_1_1filldata_3_01T_01_5_01_4.html" target="_self">filldata&lt; T * &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_11_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/d15/structdoctest_1_1detail_1_1filldata_3_01T_0fN_0e_4.html" target="_self">filldata&lt; T[N]&gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_12_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/dbd/structdoctest_1_1detail_1_1has__insertion__operator.html" target="_self">has_insertion_operator</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_13_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/d5a/structdoctest_1_1detail_1_1has__insertion__operator_3_01T_00_01decltype_07operator_3_3_07declvald5a5a279653bbfeef238ad5c984744e2.html" target="_self">has_insertion_operator&lt; T, decltype(operator&lt;&lt;(declval&lt; std::ostream &amp; &gt;(), declval&lt; const T &amp; &gt;()), void())&gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_14_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/d8e/structdoctest_1_1detail_1_1IExceptionTranslator.html" target="_self">IExceptionTranslator</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_15_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/dc2/structdoctest_1_1detail_1_1MessageBuilder.html" target="_self">MessageBuilder</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_16_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d0/dd8/structdoctest_1_1detail_1_1RelationalComparator.html" target="_self">RelationalComparator</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_17_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/de1/structdoctest_1_1detail_1_1Result.html" target="_self">Result</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_18_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/d68/structdoctest_1_1detail_1_1ResultBuilder.html" target="_self">ResultBuilder</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_19_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="de/d71/structdoctest_1_1detail_1_1StringMakerBase.html" target="_self">StringMakerBase</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_20_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/d78/structdoctest_1_1detail_1_1StringMakerBase_3_01true_01_4.html" target="_self">StringMakerBase&lt; true &gt;</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_21_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/def/structdoctest_1_1detail_1_1Subcase.html" target="_self">Subcase</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_22_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/de7/structdoctest_1_1detail_1_1TestCase.html" target="_self">TestCase</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_23_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d0f/structdoctest_1_1detail_1_1TestFailureException.html" target="_self">TestFailureException</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_24_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/ddf/structdoctest_1_1detail_1_1TestSuite.html" target="_self">TestSuite</a></td><td class="desc"></td></tr>
-<tr id="row_0_1_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="de/df8/structdoctest_1_1Approx.html" target="_self">Approx</a></td><td class="desc"></td></tr>
-<tr id="row_0_2_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_2_" class="arrow" onclick="dynsection.toggleFolder('0_2_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="da/d42/structdoctest_1_1AssertData.html" target="_self">AssertData</a></td><td class="desc"></td></tr>
-<tr id="row_0_2_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d37/classdoctest_1_1AssertData_1_1StringContains.html" target="_self">StringContains</a></td><td class="desc"></td></tr>
-<tr id="row_0_3_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/dd0/classdoctest_1_1Contains.html" target="_self">Contains</a></td><td class="desc"></td></tr>
-<tr id="row_0_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/d58/classdoctest_1_1Context.html" target="_self">Context</a></td><td class="desc"></td></tr>
-<tr id="row_0_5_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d39/structdoctest_1_1ContextOptions.html" target="_self">ContextOptions</a></td><td class="desc">OCLINT too many fields </td></tr>
-<tr id="row_0_6_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/d28/structdoctest_1_1CurrentTestCaseStats.html" target="_self">CurrentTestCaseStats</a></td><td class="desc"></td></tr>
-<tr id="row_0_7_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/d74/structdoctest_1_1IContextScope.html" target="_self">IContextScope</a></td><td class="desc"></td></tr>
-<tr id="row_0_8_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/db1/structdoctest_1_1IReporter.html" target="_self">IReporter</a></td><td class="desc"></td></tr>
-<tr id="row_0_9_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/d5f/structdoctest_1_1IsNaN.html" target="_self">IsNaN</a></td><td class="desc"></td></tr>
-<tr id="row_0_10_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dd/dae/structdoctest_1_1MessageData.html" target="_self">MessageData</a></td><td class="desc"></td></tr>
-<tr id="row_0_11_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/dae/structdoctest_1_1QueryData.html" target="_self">QueryData</a></td><td class="desc"></td></tr>
-<tr id="row_0_12_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_12_" class="arrow" onclick="dynsection.toggleFolder('0_12_')">&#9660;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="db/d0c/classdoctest_1_1String.html" target="_self">String</a></td><td class="desc"></td></tr>
-<tr id="row_0_12_0_" class="odd"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d6/ddd/structdoctest_1_1String_1_1view.html" target="_self">view</a></td><td class="desc">OCLINT avoid private static members </td></tr>
-<tr id="row_0_13_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/d85/structdoctest_1_1StringMaker.html" target="_self">StringMaker</a></td><td class="desc"></td></tr>
-<tr id="row_0_14_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d97/structdoctest_1_1SubcaseSignature.html" target="_self">SubcaseSignature</a></td><td class="desc"></td></tr>
-<tr id="row_0_15_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d2c/structdoctest_1_1TestCaseData.html" target="_self">TestCaseData</a></td><td class="desc"></td></tr>
-<tr id="row_0_16_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="dc/d09/structdoctest_1_1TestCaseException.html" target="_self">TestCaseException</a></td><td class="desc"></td></tr>
-<tr id="row_0_17_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/d03/structdoctest_1_1TestRunStats.html" target="_self">TestRunStats</a></td><td class="desc"></td></tr>
-<tr id="row_1_" class="odd"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="dynsection.toggleFolder('1_')">&#9660;</span><span class="icona"><span class="icon">N</span></span><b>std</b></td><td class="desc"></td></tr>
-<tr id="row_1_0_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d33/classstd_1_1basic__istream.html" target="_self">basic_istream</a></td><td class="desc"></td></tr>
-<tr id="row_1_1_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="df/d57/classstd_1_1basic__ostream.html" target="_self">basic_ostream</a></td><td class="desc"></td></tr>
-<tr id="row_1_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d2/db6/structstd_1_1char__traits.html" target="_self">char_traits</a></td><td class="desc"></td></tr>
-<tr id="row_1_3_" class="odd"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d0c/classstd_1_1tuple.html" target="_self">tuple</a></td><td class="desc"></td></tr>
-<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/d8f/classAdministracao.html" target="_self">Administracao</a></td><td class="desc"></td></tr>
-<tr id="row_3_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d3/d4b/classBancoDeDados.html" target="_self">BancoDeDados</a></td><td class="desc"></td></tr>
-<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/dc0/classBibliotecario.html" target="_self">Bibliotecario</a></td><td class="desc"></td></tr>
-<tr id="row_5_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d4/ddc/structData.html" target="_self">Data</a></td><td class="desc"></td></tr>
-<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d5/d7a/classLivro.html" target="_self">Livro</a></td><td class="desc"></td></tr>
-<tr id="row_7_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d9/d2c/structLivroDB.html" target="_self">LivroDB</a></td><td class="desc">Estrutuda de dado utilizada para salvar livros no banco de dados </td></tr>
-<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d8/d28/classSistemaLivros.html" target="_self">SistemaLivros</a></td><td class="desc"></td></tr>
-<tr id="row_9_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d1/d07/classUsuario.html" target="_self">Usuario</a></td><td class="desc"></td></tr>
-<tr id="row_10_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="d7/dbf/classUsuarioComum.html" target="_self">UsuarioComum</a></td><td class="desc"></td></tr>
+<table class="directory">
+<tr id="row_0_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classAdministracao.html" target="_self">Administracao</a></td><td class="desc">Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins </td></tr>
+<tr id="row_1_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classBancoDeDados.html" target="_self">BancoDeDados</a></td><td class="desc">Classe referente à manutenção e backup do <a class="el" href="classSistemaLivros.html" title="Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo.">SistemaLivros</a> em arquivos CSV (*.csv) permanentes </td></tr>
+<tr id="row_2_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classBibliotecario.html" target="_self">Bibliotecario</a></td><td class="desc">Classe referente ao bibliotecário, que realiza ações a nível de empréstimo e devolução </td></tr>
+<tr id="row_3_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structData.html" target="_self">Data</a></td><td class="desc">Estrutura de dados utilizada para salvar as datas como dia, mês e ano </td></tr>
+<tr id="row_4_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classExcecaoLivroJaEmprestado.html" target="_self">ExcecaoLivroJaEmprestado</a></td><td class="desc">Exceção referente à quando um exemplar já foi emprestado </td></tr>
+<tr id="row_5_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classLivro.html" target="_self">Livro</a></td><td class="desc">Classe referente ao livro e suas informações </td></tr>
+<tr id="row_6_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="structLivroDB.html" target="_self">LivroDB</a></td><td class="desc">Estrutuda de dado utilizada para salvar livros no banco de dados </td></tr>
+<tr id="row_7_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classSistemaLivros.html" target="_self">SistemaLivros</a></td><td class="desc">Sistema de livros, utilizado para acesso e cadastro de informações sobre do acervo </td></tr>
+<tr id="row_8_" class="even"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classUsuario.html" target="_self">Usuario</a></td><td class="desc">Classe base de usuários do sistema de biblioteca </td></tr>
+<tr id="row_9_" class="odd"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span class="icona"><span class="icon">C</span></span><a class="el" href="classUsuarioComum.html" target="_self">UsuarioComum</a></td><td class="desc">Classe referente à usuários comuns de biblioteca, para solicitar empréstimo de livros, realizar devoluções.. </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Gerado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
 </body>
 </html>
