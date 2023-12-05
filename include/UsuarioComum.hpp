@@ -7,12 +7,14 @@
 #include "Livro.hpp"
 #include "Usuario.hpp"
 
+/// @brief Estrutura de dados utilizada para salvar as datas como dia, mês e ano
 struct Data{
     unsigned dia;
     unsigned mes;
     unsigned ano;
 };
 
+/// @brief Classe referente à usuários comuns de biblioteca, para solicitar empréstimo de livros, realizar devoluções...
 class UsuarioComum : public  Usuario {
 public:
     

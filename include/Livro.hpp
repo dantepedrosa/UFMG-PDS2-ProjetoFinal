@@ -7,6 +7,7 @@
 
 typedef std::string CodISBN;
 
+/// @brief Classe referente ao livro e suas informações
 class Livro {
 public:
 

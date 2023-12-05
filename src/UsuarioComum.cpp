@@ -4,6 +4,7 @@
 
 #include "UsuarioComum.hpp"
 
+/// @brief Exceção referente à quando um exemplar já foi emprestado
 class ExcecaoLivroJaEmprestado{};
 
 UsuarioComum::UsuarioComum(std::string nome, int senha) : Usuario(nome, senha){};

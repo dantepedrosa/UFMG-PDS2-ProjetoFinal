@@ -3,9 +3,11 @@
 #include "Usuario.hpp"
 #include "Livro.hpp"
 
+
 struct LivroDB;
 class SistemaLivros;
 
+/// @brief Classe referente aos usuários do sistema que tem permissão de alterar o banco de dados e afins
 class Administracao : public  Usuario{
 public:
 

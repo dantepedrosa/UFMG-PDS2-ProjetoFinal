@@ -3,6 +3,7 @@
 #include "UsuarioComum.hpp"
 #include "Livro.hpp"
 
+/// @brief Classe referente ao bibliotecário, que realiza ações a nível de empréstimo e devolução
 class Bibliotecario : public  Usuario{
 public: 
 
