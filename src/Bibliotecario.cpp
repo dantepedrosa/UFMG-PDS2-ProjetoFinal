@@ -2,8 +2,7 @@
 #include <iostream>
 #include <stdexcept>
 
-bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn, const std::string &data){
-    // TODO - Implementar função
+bool Bibliotecario::liberarEmprestimo(UsuarioComum &u, CodISBN isbn, const std::string &data){
     if(u.getPendencia()){
         try {
             throw std::invalid_argument("Usuário com pendência, não é possível liberar o empréstimo.");
@@ -27,7 +26,7 @@ bool Bibliotecario::liberarEmprestimo(Usuario &u, CodISBN isbn, const std::strin
 }
 
 
-bool Bibliotecario::liberarDevolucao(Usuario &u, CodISBN isbn){
+bool Bibliotecario::liberarDevolucao(UsuarioComum &u, CodISBN isbn){
     // TODO - Implementar função
 }
 

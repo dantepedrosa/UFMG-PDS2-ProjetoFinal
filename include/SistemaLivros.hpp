@@ -105,6 +105,6 @@ public:
 private:
 
     /// @brief Instância de BancoDeDados para armazenar listas em arquivo.
-    BancoDeDados bd;
+    BancoDeDados *bd;
 
 };

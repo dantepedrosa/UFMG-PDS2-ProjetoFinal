@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Usuario.hpp"
+#include "UsuarioComum.hpp"
 #include "Livro.hpp"
 
 class Bibliotecario : public  Usuario{
@@ -12,14 +12,14 @@ public:
     /// @param data Data da liberação do empréstimo
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e false se falhou
-    bool liberarEmprestimo(Usuario &u, CodISBN isbn, const std::string &data);
+    bool liberarEmprestimo(UsuarioComum &u, CodISBN isbn, const std::string &data);
 
     /// @brief Consolida devolução no sistema de livros. 
     /// @details Caso esteja atrasado, bloqueia o usuário e gera GRU.
     /// @param u Instância de usuário solicitando serviço 
     /// @param isbn Código ISBN do livro
     /// @return True se bem sucedido e false se falhou
-    bool liberarDevolucao(Usuario &u, CodISBN isbn);
+    bool liberarDevolucao(UsuarioComum &u, CodISBN isbn);
 
     /// @brief Define a data de empréstimo para a instância atual
     /// @param dataEmprestimo Data de empréstimo a ser definida

@@ -2,7 +2,9 @@
 
 #include "Usuario.hpp"
 #include "Livro.hpp"
-#include "SistemaLivros.hpp"
+
+struct LivroDB;
+class SistemaLivros;
 
 class Administracao : public  Usuario{
 public:
@@ -28,6 +30,6 @@ public:
 
 private:
 
-    SistemaLivros _sl();  ///< Intância de sistema livros.
+    SistemaLivros *_sl;  ///< Intância de sistema livros.
 
 };

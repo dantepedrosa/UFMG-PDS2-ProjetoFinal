@@ -59,7 +59,3 @@ bool UsuarioComum::temLivroEmprestado() const{
     return false;
 }
 
-
-std::string Usuario::getNome(){
-    return _nome;
-}

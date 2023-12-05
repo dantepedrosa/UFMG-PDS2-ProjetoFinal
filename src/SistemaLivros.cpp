@@ -1,9 +1,12 @@
 #include "SistemaLivros.hpp"
 
 
-SistemaLivros::SistemaLivros(bool readFirst, std::string path) : bd(readFirst, path, *this){
+SistemaLivros::SistemaLivros(bool readFirst, std::string path){
+
+    BancoDeDados buf(readFirst, path, *this);
+    bd = &buf;
     if(readFirst){
-        bd.lerBancoDeDados(*this);
+        bd->lerBancoDeDados(*this);
     }
 }
 
@@ -89,8 +92,8 @@ bool SistemaLivros::removerLivro(Livro livro){
 
 
 bool SistemaLivros::salvarListas(){
-    bd.salvarAcervo(*this);
-    bd.salvarCategorias(*this);
+    bd->salvarAcervo(*this);
+    bd->salvarCategorias(*this);
 }
 
 
